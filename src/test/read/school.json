@@ -1,0 +1,2719 @@
+{
+    "data": [
+        {
+            "data": {
+                "location": {
+                    "state": "IA",
+                    "zip": "17886",
+                    "address": "92677 Kunze Spring",
+                    "city": "Derby Center"
+                },
+                "low_grade": "Kindergarten",
+                "sis_id": "0048",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "PostGraduate",
+                "state_id": "",
+                "name": "Slothgreat",
+                "school_number": "0048",
+                "phone": "(589) 510-6136",
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.373Z",
+                "created": "2016-01-23T20:12:35.369Z",
+                "id": "56a3deb391a86e711a0000f1"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f1"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "address": "",
+                    "city": "San Martin",
+                    "state": "AR",
+                    "zip": "65274"
+                },
+                "phone": "",
+                "name": "Vultureroad",
+                "last_modified": "2016-01-23T20:12:35.382Z",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.379Z",
+                "state_id": "",
+                "school_number": "0146",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "sis_id": "0146",
+                "high_grade": "PostGraduate",
+                "low_grade": "6",
+                "id": "56a3deb391a86e711a0000f2"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f2"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "phone": "1-(266) 997-2823",
+                "school_number": "0200",
+                "state_id": "",
+                "nces_id": "",
+                "high_grade": "Kindergarten",
+                "low_grade": "Kindergarten",
+                "sis_id": "0200",
+                "last_modified": "2016-01-23T20:12:35.387Z",
+                "name": "Swoopcharm",
+                "location": {
+                    "address": "824 McKenzie Drives",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "principal": {
+                    "name": "",
+                    "email": ""
+                },
+                "created": "2016-01-23T20:12:35.383Z",
+                "id": "56a3deb391a86e711a0000f3"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f3"
+        },
+        {
+            "data": {
+                "high_grade": "Kindergarten",
+                "phone": "",
+                "low_grade": "Kindergarten",
+                "location": {
+                    "address": "4914 Farrell Light",
+                    "city": "New Deal",
+                    "state": "PA",
+                    "zip": "33671"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.389Z",
+                "created": "2016-01-23T20:12:35.388Z",
+                "nces_id": "",
+                "sis_id": "0348",
+                "school_number": "0348",
+                "state_id": "",
+                "name": "Razorgem",
+                "id": "56a3deb391a86e711a0000f4"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f4"
+        },
+        {
+            "data": {
+                "sis_id": "0362",
+                "phone": "",
+                "name": "Bunnyflicker",
+                "location": {
+                    "state": "IA",
+                    "zip": "38879",
+                    "address": "6255 Evert Unions",
+                    "city": "Northleach"
+                },
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.393Z",
+                "school_number": "0362",
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.392Z",
+                "low_grade": "Kindergarten",
+                "state_id": "",
+                "nces_id": "",
+                "high_grade": "Kindergarten",
+                "id": "56a3deb391a86e711a0000f5"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f5"
+        },
+        {
+            "data": {
+                "name": "Spearchestnut",
+                "phone": "",
+                "school_number": "0363",
+                "nces_id": "",
+                "low_grade": "Kindergarten",
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.395Z",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "sis_id": "0363",
+                "high_grade": "Kindergarten",
+                "location": {
+                    "zip": "",
+                    "address": "35763 Murphy Overpass",
+                    "city": "",
+                    "state": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.398Z",
+                "state_id": "",
+                "id": "56a3deb391a86e711a0000f6"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f6"
+        },
+        {
+            "data": {
+                "location": {
+                    "address": "21484 Fritsch Coves",
+                    "city": "Bury",
+                    "state": "NJ",
+                    "zip": "67133"
+                },
+                "sis_id": "0406",
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "Kindergarten",
+                "name": "Hoofrift",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.401Z",
+                "created": "2016-01-23T20:12:35.400Z",
+                "school_number": "0406",
+                "nces_id": "",
+                "state_id": "",
+                "high_grade": "Kindergarten",
+                "phone": "",
+                "id": "56a3deb391a86e711a0000f7"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f7"
+        },
+        {
+            "data": {
+                "location": {
+                    "city": "Bury",
+                    "state": "MN",
+                    "zip": "67091",
+                    "address": "9632 Conn Parkway"
+                },
+                "school_number": "0466",
+                "low_grade": "Kindergarten",
+                "name": "Elfneon",
+                "created": "2016-01-23T20:12:35.402Z",
+                "sis_id": "0466",
+                "phone": "",
+                "state_id": "",
+                "high_grade": "Kindergarten",
+                "nces_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.403Z",
+                "id": "56a3deb391a86e711a0000f8"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f8"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "name": "Cowlgiant",
+                "phone": "(745) 604-7870",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.422Z",
+                "location": {
+                    "zip": "80576",
+                    "address": "6784 Runolfsdottir Vista",
+                    "city": "Berkhamsted",
+                    "state": "OH"
+                },
+                "created": "2016-01-23T20:12:35.405Z",
+                "high_grade": "Kindergarten",
+                "school_number": "0619",
+                "low_grade": "Kindergarten",
+                "nces_id": "",
+                "sis_id": "0619",
+                "state_id": "",
+                "id": "56a3deb391a86e711a0000f9"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000f9"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "created": "2016-01-23T20:12:35.423Z",
+                "high_grade": "PostGraduate",
+                "nces_id": "",
+                "school_number": "0630",
+                "sis_id": "0630",
+                "phone": "",
+                "last_modified": "2016-01-23T20:12:35.424Z",
+                "state_id": "",
+                "low_grade": "Kindergarten",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "city": "San Martin",
+                    "state": "KY",
+                    "zip": "51968",
+                    "address": "86174 Lesly Mission"
+                },
+                "name": "Bunnybloom",
+                "id": "56a3deb391a86e711a0000fa"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000fa"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "sis_id": "0652",
+                "name": "Pirateslime",
+                "phone": "",
+                "last_modified": "2016-01-23T20:12:35.427Z",
+                "low_grade": "6",
+                "school_number": "0652",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "PostGraduate",
+                "location": {
+                    "city": "Baldock",
+                    "state": "OK",
+                    "zip": "74761",
+                    "address": "96985 MacGyver Shore"
+                },
+                "created": "2016-01-23T20:12:35.425Z",
+                "nces_id": "",
+                "id": "56a3deb391a86e711a0000fb"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000fb"
+        },
+        {
+            "data": {
+                "school_number": "0665",
+                "high_grade": "Kindergarten",
+                "low_grade": "Kindergarten",
+                "sis_id": "0665",
+                "name": "Cranecherry",
+                "state_id": "",
+                "phone": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.428Z",
+                "last_modified": "2016-01-23T20:12:35.429Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "address": "9655 Earnestine Rapids",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "id": "56a3deb391a86e711a0000fc"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000fc"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "sis_id": "0666",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.432Z",
+                "low_grade": "6",
+                "created": "2016-01-23T20:12:35.430Z",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "phone": "",
+                "school_number": "0666",
+                "nces_id": "",
+                "name": "Bisonpyrite",
+                "high_grade": "PostGraduate",
+                "location": {
+                    "state": "CO",
+                    "zip": "93251",
+                    "address": "2853 Bethel Vista",
+                    "city": "Kingsbridge"
+                },
+                "id": "56a3deb391a86e711a0000fd"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000fd"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "high_grade": "Kindergarten",
+                "sis_id": "0704",
+                "school_number": "0704",
+                "phone": "",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.432Z",
+                "last_modified": "2016-01-23T20:12:35.433Z",
+                "location": {
+                    "address": "312 Weimann Crescent",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "low_grade": "Kindergarten",
+                "name": "Mastercord",
+                "id": "56a3deb391a86e711a0000fe"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000fe"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.435Z",
+                "location": {
+                    "city": "Kingsbridge",
+                    "state": "WY",
+                    "zip": "86422",
+                    "address": "957 Bill Crossing"
+                },
+                "sis_id": "0724",
+                "phone": "",
+                "high_grade": "PostGraduate",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "0724",
+                "low_grade": "PreKindergarten",
+                "nces_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "created": "2016-01-23T20:12:35.435Z",
+                "name": "Roverheavy",
+                "id": "56a3deb391a86e711a0000ff"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a0000ff"
+        },
+        {
+            "data": {
+                "sis_id": "1010",
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Keeperquartz",
+                "state_id": "",
+                "nces_id": "",
+                "location": {
+                    "address": "84464 Mylene Island",
+                    "city": "Baldock",
+                    "state": "NM",
+                    "zip": "01839"
+                },
+                "low_grade": "7",
+                "last_modified": "2016-01-23T20:12:35.437Z",
+                "created": "2016-01-23T20:12:35.437Z",
+                "high_grade": "PostGraduate",
+                "phone": "1-(319) 808-7312",
+                "principal": {
+                    "email": "addison.anderson@example.com",
+                    "name": "Bisonhelix"
+                },
+                "school_number": "1010",
+                "id": "56a3deb391a86e711a000100"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000100"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "location": {
+                    "address": "5812 Jodie Junctions",
+                    "city": "Baldock",
+                    "state": "LA",
+                    "zip": "54897"
+                },
+                "nces_id": "",
+                "low_grade": "7",
+                "last_modified": "2016-01-23T20:12:35.445Z",
+                "name": "Toeequinox",
+                "created": "2016-01-23T20:12:35.439Z",
+                "phone": "(593) 819-5523",
+                "district": "56a3cdecbe19c701000005fe",
+                "principal": {
+                    "email": "john paul.smith@example.com",
+                    "name": "Centaurfast"
+                },
+                "sis_id": "1020",
+                "school_number": "1020",
+                "high_grade": "PostGraduate",
+                "id": "56a3deb391a86e711a000101"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000101"
+        },
+        {
+            "data": {
+                "location": {
+                    "state": "NH",
+                    "zip": "08999",
+                    "address": "211 Toy Lodge",
+                    "city": "Cienega Springs"
+                },
+                "low_grade": "7",
+                "name": "Raptorspectrum",
+                "state_id": "",
+                "phone": "",
+                "school_number": "1030",
+                "principal": {
+                    "email": "aubrey.martinez@example.com",
+                    "name": "Pythonvine"
+                },
+                "nces_id": "",
+                "high_grade": "PostGraduate",
+                "last_modified": "2016-01-23T20:12:35.461Z",
+                "created": "2016-01-23T20:12:35.447Z",
+                "sis_id": "1030",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000102"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000102"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.463Z",
+                "principal": {
+                    "email": "natalie.li@example.com",
+                    "name": "Healermaple"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "phone": "1-(734) 830-3251",
+                "low_grade": "9",
+                "state_id": "",
+                "school_number": "1040",
+                "created": "2016-01-23T20:12:35.462Z",
+                "high_grade": "PostGraduate",
+                "nces_id": "",
+                "sis_id": "1040",
+                "name": "Boneemerald",
+                "location": {
+                    "state": "NC",
+                    "zip": "04917",
+                    "address": "5548 Konopelski Greens",
+                    "city": "Lucien"
+                },
+                "id": "56a3deb391a86e711a000103"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000103"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.465Z",
+                "location": {
+                    "address": "485 Upton Mews",
+                    "city": "Campden",
+                    "state": "FL",
+                    "zip": "87088"
+                },
+                "principal": {
+                    "email": "joshua.garcia@example.com",
+                    "name": "Shiftlightning"
+                },
+                "low_grade": "9",
+                "school_number": "1050",
+                "name": "Frienddeep",
+                "phone": "(404) 888-9377",
+                "sis_id": "1050",
+                "created": "2016-01-23T20:12:35.464Z",
+                "id": "56a3deb391a86e711a000104"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000104"
+        },
+        {
+            "data": {
+                "location": {
+                    "address": "769 Judson Common",
+                    "city": "Skidaway Island",
+                    "state": "CO",
+                    "zip": "58335"
+                },
+                "school_number": "1053",
+                "state_id": "",
+                "principal": {
+                    "email": "chloe.jones@example.com",
+                    "name": "Drifterlie"
+                },
+                "nces_id": "",
+                "name": "Oriolepuddle",
+                "sis_id": "1053",
+                "created": "2016-01-23T20:12:35.467Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.468Z",
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "phone": "",
+                "id": "56a3deb391a86e711a000105"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000105"
+        },
+        {
+            "data": {
+                "school_number": "1064",
+                "last_modified": "2016-01-23T20:12:35.471Z",
+                "low_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "phone": "1-(935) 373-8691",
+                "name": "Snapcoal",
+                "location": {
+                    "address": "2742 Barton Brook",
+                    "city": "Plympton",
+                    "state": "IA",
+                    "zip": "38018"
+                },
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.470Z",
+                "sis_id": "1064",
+                "principal": {
+                    "email": "mason.jackson@example.com",
+                    "name": "Geckometeor"
+                },
+                "high_grade": "PostGraduate",
+                "id": "56a3deb391a86e711a000106"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000106"
+        },
+        {
+            "data": {
+                "sis_id": "1070",
+                "principal": {
+                    "email": "charlotte.anderson@example.com",
+                    "name": "Throatwind"
+                },
+                "location": {
+                    "city": "Berkhamsted",
+                    "state": "IL",
+                    "zip": "78821",
+                    "address": "4897 O'Conner Summit"
+                },
+                "nces_id": "",
+                "school_number": "1070",
+                "last_modified": "2016-01-23T20:12:35.473Z",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.472Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Pumaoasis",
+                "phone": "(193) 180-6898",
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "id": "56a3deb391a86e711a000107"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000107"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "joshua.davis@example.com",
+                    "name": "Dutchessnorth"
+                },
+                "location": {
+                    "zip": "44571",
+                    "address": "2922 O'Hara Corner",
+                    "city": "Brandwell",
+                    "state": "UT"
+                },
+                "low_grade": "9",
+                "high_grade": "PostGraduate",
+                "school_number": "1080",
+                "name": "Warriorclover",
+                "last_modified": "2016-01-23T20:12:35.475Z",
+                "nces_id": "",
+                "sis_id": "1080",
+                "created": "2016-01-23T20:12:35.474Z",
+                "phone": "",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000108"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000108"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "sophia.anderson@example.com",
+                    "name": "Cubbrave"
+                },
+                "state_id": "",
+                "low_grade": "9",
+                "school_number": "1103",
+                "high_grade": "PostGraduate",
+                "location": {
+                    "address": "4980 Schmidt Extensions",
+                    "city": "Brandwell",
+                    "state": "WI",
+                    "zip": "13647"
+                },
+                "name": "Heronivy",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.478Z",
+                "last_modified": "2016-01-23T20:12:35.478Z",
+                "phone": "",
+                "sis_id": "1103",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000109"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000109"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.479Z",
+                "location": {
+                    "city": "Derby Center",
+                    "state": "AK",
+                    "zip": "25876",
+                    "address": "13708 Yasmine Springs"
+                },
+                "name": "Foxdent",
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "PostGraduate",
+                "state_id": "",
+                "school_number": "1120",
+                "nces_id": "",
+                "principal": {
+                    "email": "gwendolyn.williams@example.com",
+                    "name": "Legendrhinestone"
+                },
+                "low_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.486Z",
+                "sis_id": "1120",
+                "phone": "(965) 816-4603",
+                "id": "56a3deb391a86e711a00010a"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010a"
+        },
+        {
+            "data": {
+                "school_number": "1140",
+                "principal": {
+                    "email": "ava.keihanaikukauakahihuliheekahaunaele@example.com",
+                    "name": "Paladinsmall"
+                },
+                "sis_id": "1140",
+                "last_modified": "2016-01-23T20:12:35.501Z",
+                "low_grade": "9",
+                "created": "2016-01-23T20:12:35.487Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "name": "Chopperwild",
+                "state_id": "",
+                "phone": "",
+                "high_grade": "PostGraduate",
+                "location": {
+                    "zip": "04995",
+                    "address": "1628 Dennis Parks",
+                    "city": "Burrton",
+                    "state": "NM"
+                },
+                "id": "56a3deb391a86e711a00010b"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010b"
+        },
+        {
+            "data": {
+                "low_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.504Z",
+                "high_grade": "PostGraduate",
+                "name": "Hisserbuttercup",
+                "state_id": "",
+                "phone": "",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.502Z",
+                "location": {
+                    "city": "Lucien",
+                    "state": "WA",
+                    "zip": "37400",
+                    "address": "7009 Renee Crest"
+                },
+                "sis_id": "1162",
+                "school_number": "1162",
+                "principal": {
+                    "email": "daniel.johnson@example.com",
+                    "name": "Shirtcrocus"
+                },
+                "id": "56a3deb391a86e711a00010c"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010c"
+        },
+        {
+            "data": {
+                "school_number": "1171",
+                "last_modified": "2016-01-23T20:12:35.505Z",
+                "principal": {
+                    "name": "Fishermica",
+                    "email": "emily.miller@example.com"
+                },
+                "location": {
+                    "zip": "99427",
+                    "address": "16051 Danika Lodge",
+                    "city": "Bury",
+                    "state": "NH"
+                },
+                "phone": "",
+                "sis_id": "1171",
+                "created": "2016-01-23T20:12:35.504Z",
+                "state_id": "",
+                "low_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Foxpineapple",
+                "nces_id": "",
+                "high_grade": "PostGraduate",
+                "id": "56a3deb391a86e711a00010d"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010d"
+        },
+        {
+            "data": {
+                "school_number": "1195",
+                "low_grade": "9",
+                "name": "Shriekeralder",
+                "created": "2016-01-23T20:12:35.507Z",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "state": "IA",
+                    "zip": "26763",
+                    "address": "818 Camden Oval",
+                    "city": "Buffalo City"
+                },
+                "sis_id": "1195",
+                "high_grade": "PostGraduate",
+                "principal": {
+                    "name": "Grabberfoil",
+                    "email": "elizabeth.white@example.com"
+                },
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.508Z",
+                "phone": "(303) 840-7640",
+                "id": "56a3deb391a86e711a00010e"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010e"
+        },
+        {
+            "data": {
+                "sis_id": "1200",
+                "nces_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "PostGraduate",
+                "created": "2016-01-23T20:12:35.509Z",
+                "phone": "",
+                "state_id": "",
+                "location": {
+                    "city": "Ransom Canyon",
+                    "state": "NM",
+                    "zip": "65128",
+                    "address": "91279 Cordie Dale"
+                },
+                "last_modified": "2016-01-23T20:12:35.510Z",
+                "low_grade": "9",
+                "name": "Bugchisel",
+                "principal": {
+                    "email": "elizabeth.jinglehimer schmidt@example.com",
+                    "name": "Spurmeteor"
+                },
+                "school_number": "1200",
+                "id": "56a3deb391a86e711a00010f"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00010f"
+        },
+        {
+            "data": {
+                "name": "Thumbclever",
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.513Z",
+                "location": {
+                    "city": "Newstead",
+                    "state": "NE",
+                    "zip": "66934",
+                    "address": "605 Alba Underpass"
+                },
+                "school_number": "1210",
+                "phone": "",
+                "high_grade": "PostGraduate",
+                "sis_id": "1210",
+                "state_id": "",
+                "principal": {
+                    "email": "emily.smith@example.com",
+                    "name": "Razorhazel"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.511Z",
+                "low_grade": "9",
+                "id": "56a3deb391a86e711a000110"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000110"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.514Z",
+                "phone": "",
+                "low_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.515Z",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1215",
+                "location": {
+                    "state": "PA",
+                    "zip": "47044",
+                    "address": "28841 Marquardt Walk",
+                    "city": "Kingsbridge"
+                },
+                "sis_id": "1215",
+                "nces_id": "",
+                "high_grade": "PostGraduate",
+                "name": "Browholy",
+                "principal": {
+                    "email": "madison.keihanaikukauakahihuliheekahaunaele@example.com",
+                    "name": "Mistresshollow"
+                },
+                "id": "56a3deb391a86e711a000111"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000111"
+        },
+        {
+            "data": {
+                "low_grade": "9",
+                "principal": {
+                    "email": "aiden.miller@example.com",
+                    "name": "Gargoylesharp"
+                },
+                "high_grade": "PostGraduate",
+                "created": "2016-01-23T20:12:35.516Z",
+                "school_number": "1230",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "phone": "(201) 584-9494",
+                "location": {
+                    "state": "NH",
+                    "zip": "66407",
+                    "address": "775 Mueller Islands",
+                    "city": "Campden"
+                },
+                "last_modified": "2016-01-23T20:12:35.518Z",
+                "sis_id": "1230",
+                "name": "Stingeriron",
+                "id": "56a3deb391a86e711a000112"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000112"
+        },
+        {
+            "data": {
+                "sis_id": "1253",
+                "school_number": "1253",
+                "state_id": "",
+                "phone": "(247) 302-5914",
+                "name": "Kingplaid",
+                "created": "2016-01-23T20:12:35.523Z",
+                "high_grade": "PostGraduate",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.525Z",
+                "low_grade": "9",
+                "nces_id": "",
+                "location": {
+                    "state": "NM",
+                    "zip": "93379",
+                    "address": "3024 Grady Glens",
+                    "city": "Burrton"
+                },
+                "principal": {
+                    "email": "charlotte.jinglehimer-schmidt@example.com",
+                    "name": "Fancierlace"
+                },
+                "id": "56a3deb391a86e711a000113"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000113"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.541Z",
+                "name": "Goatfierce",
+                "location": {
+                    "city": "Lucien",
+                    "state": "KY",
+                    "zip": "96878",
+                    "address": "38802 Zulauf Island"
+                },
+                "phone": "1-(162) 166-3464",
+                "sis_id": "1256",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "nces_id": "",
+                "school_number": "1256",
+                "principal": {
+                    "email": "gwendolyn.robinson@example.com",
+                    "name": "Vulturechecker"
+                },
+                "low_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.527Z",
+                "id": "56a3deb391a86e711a000114"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000114"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.544Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1260",
+                "high_grade": "12",
+                "low_grade": "6",
+                "nces_id": "",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.543Z",
+                "name": "Hissshadow",
+                "phone": "",
+                "sis_id": "1260",
+                "location": {
+                    "address": "6080 Guiseppe Falls",
+                    "city": "Berkhamsted",
+                    "state": "NJ",
+                    "zip": "22454"
+                },
+                "principal": {
+                    "email": "elijah.wilson@example.com",
+                    "name": "Facesplit"
+                },
+                "id": "56a3deb391a86e711a000115"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000115"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Beerampant",
+                "phone": "",
+                "location": {
+                    "state": "GA",
+                    "zip": "34669",
+                    "address": "76596 Durward Ford",
+                    "city": "Hoonah"
+                },
+                "low_grade": "9",
+                "principal": {
+                    "email": "liam.jinglehimer schmidt@example.com",
+                    "name": "Driftervolcano"
+                },
+                "created": "2016-01-23T20:12:35.547Z",
+                "nces_id": "",
+                "school_number": "1265",
+                "sis_id": "1265",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "last_modified": "2016-01-23T20:12:35.551Z",
+                "id": "56a3deb391a86e711a000116"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000116"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.554Z",
+                "low_grade": "Kindergarten",
+                "state_id": "",
+                "principal": {
+                    "email": "daniel.keihanaikukauakahihuliheekahaunaele@example.com",
+                    "name": "Dogpepper"
+                },
+                "created": "2016-01-23T20:12:35.552Z",
+                "high_grade": "Kindergarten",
+                "name": "Sagecake",
+                "nces_id": "",
+                "location": {
+                    "city": "",
+                    "state": "",
+                    "zip": "",
+                    "address": "43480 Kris Shoal"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "phone": "(743) 407-4780",
+                "sis_id": "1270",
+                "school_number": "1270",
+                "id": "56a3deb391a86e711a000117"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000117"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "Kindergarten",
+                "high_grade": "Kindergarten",
+                "phone": "",
+                "last_modified": "2016-01-23T20:12:35.556Z",
+                "location": {
+                    "state": "",
+                    "zip": "",
+                    "address": "401 Hillary Canyon",
+                    "city": ""
+                },
+                "school_number": "1271",
+                "nces_id": "",
+                "principal": {
+                    "email": "elijah.garcia@example.com",
+                    "name": "Mouseisland"
+                },
+                "name": "Gembranch",
+                "created": "2016-01-23T20:12:35.555Z",
+                "sis_id": "1271",
+                "id": "56a3deb391a86e711a000118"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000118"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "state_id": "",
+                "high_grade": "4",
+                "name": "Facelava",
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.559Z",
+                "school_number": "1272",
+                "sis_id": "1272",
+                "created": "2016-01-23T20:12:35.557Z",
+                "principal": {
+                    "name": "Tailbog",
+                    "email": "natalie.smith@example.com"
+                },
+                "location": {
+                    "address": "58712 Wintheiser Wells",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "low_grade": "Kindergarten",
+                "id": "56a3deb391a86e711a000119"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000119"
+        },
+        {
+            "data": {
+                "location": {
+                    "state": "",
+                    "zip": "",
+                    "address": "",
+                    "city": ""
+                },
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1275",
+                "last_modified": "2016-01-23T20:12:35.562Z",
+                "principal": {
+                    "email": "noah.thompson@example.com",
+                    "name": "Lizardatom"
+                },
+                "sis_id": "1275",
+                "low_grade": "Kindergarten",
+                "phone": "",
+                "high_grade": "Kindergarten",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.560Z",
+                "name": "Princemaple",
+                "id": "56a3deb391a86e711a00011a"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011a"
+        },
+        {
+            "data": {
+                "location": {
+                    "address": "3149 Pacocha Lodge",
+                    "city": "Burrton",
+                    "state": "GA",
+                    "zip": "92628"
+                },
+                "principal": {
+                    "name": "Swordspring",
+                    "email": "john-paul.jinglehimerschmidt@example.com"
+                },
+                "last_modified": "2016-01-23T20:12:35.569Z",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "name": "Sparrowcandy",
+                "school_number": "1285",
+                "district": "56a3cdecbe19c701000005fe",
+                "sis_id": "1285",
+                "created": "2016-01-23T20:12:35.562Z",
+                "phone": "",
+                "nces_id": "",
+                "id": "56a3deb391a86e711a00011b"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011b"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.570Z",
+                "location": {
+                    "address": "35184 West Lakes",
+                    "city": "Hoonah",
+                    "state": "AK",
+                    "zip": "45824"
+                },
+                "sis_id": "1291",
+                "state_id": "",
+                "low_grade": "PreKindergarten",
+                "principal": {
+                    "email": "a.jinglehimer schmidt@example.com",
+                    "name": "Craftermire"
+                },
+                "high_grade": "7",
+                "nces_id": "",
+                "phone": "1-(346) 434-5814",
+                "school_number": "1291",
+                "last_modified": "2016-01-23T20:12:35.571Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Rippertreasure",
+                "id": "56a3deb391a86e711a00011c"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011c"
+        },
+        {
+            "data": {
+                "phone": "1-(738) 794-3701",
+                "school_number": "1292",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.587Z",
+                "principal": {
+                    "name": "Ogrestream",
+                    "email": "john paul.li@example.com"
+                },
+                "high_grade": "9",
+                "state_id": "",
+                "low_grade": "5",
+                "name": "Binderrhinestone",
+                "sis_id": "1292",
+                "created": "2016-01-23T20:12:35.573Z",
+                "location": {
+                    "zip": "27296",
+                    "address": "2203 Ebert View",
+                    "city": "San Martin",
+                    "state": "IL"
+                },
+                "nces_id": "",
+                "id": "56a3deb391a86e711a00011d"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011d"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.589Z",
+                "high_grade": "PostGraduate",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1293",
+                "phone": "1-(647) 643-7764",
+                "sis_id": "1293",
+                "location": {
+                    "zip": "50598",
+                    "address": "796 Alysson Fields",
+                    "city": "Brandwell",
+                    "state": "ND"
+                },
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.590Z",
+                "name": "Knifemarsh",
+                "low_grade": "7",
+                "principal": {
+                    "name": "Braideast",
+                    "email": "john-paul.castañeda@example.com"
+                },
+                "nces_id": "",
+                "id": "56a3deb391a86e711a00011e"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011e"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.592Z",
+                "high_grade": "PostGraduate",
+                "principal": {
+                    "email": "david.martinez@example.com",
+                    "name": "Shieldemerald"
+                },
+                "phone": "(970) 436-1801",
+                "state_id": "",
+                "school_number": "1294",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.591Z",
+                "location": {
+                    "address": "75174 Reilly Row",
+                    "city": "Skidaway Island",
+                    "state": "WY",
+                    "zip": "79475"
+                },
+                "name": "Dutchesslemon",
+                "sis_id": "1294",
+                "low_grade": "5",
+                "id": "56a3deb391a86e711a00011f"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00011f"
+        },
+        {
+            "data": {
+                "sis_id": "1305",
+                "name": "Singersun",
+                "low_grade": "Kindergarten",
+                "school_number": "1305",
+                "created": "2016-01-23T20:12:35.593Z",
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "city": "",
+                    "state": "",
+                    "zip": "",
+                    "address": ""
+                },
+                "high_grade": "Kindergarten",
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.595Z",
+                "state_id": "",
+                "principal": {
+                    "email": "abigail.garcia@example.com",
+                    "name": "Sargentpuddle"
+                },
+                "id": "56a3deb391a86e711a000120"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000120"
+        },
+        {
+            "data": {
+                "low_grade": "6",
+                "name": "Pumahoneysuckle",
+                "nces_id": "",
+                "sis_id": "1311",
+                "last_modified": "2016-01-23T20:12:35.597Z",
+                "created": "2016-01-23T20:12:35.596Z",
+                "principal": {
+                    "email": "noah.thompson@example.com",
+                    "name": "Minnowcoal"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1311",
+                "high_grade": "PostGraduate",
+                "phone": "(474) 876-8441",
+                "state_id": "",
+                "location": {
+                    "address": "606 Dallin Mountain",
+                    "city": "Lucien",
+                    "state": "CT",
+                    "zip": "91621"
+                },
+                "id": "56a3deb391a86e711a000121"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000121"
+        },
+        {
+            "data": {
+                "high_grade": "PostGraduate",
+                "nces_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "name": "Sharkslime",
+                "created": "2016-01-23T20:12:35.598Z",
+                "sis_id": "1315",
+                "phone": "",
+                "location": {
+                    "state": "MO",
+                    "zip": "90504",
+                    "address": "528 Dax Mountain",
+                    "city": "Kingsbridge"
+                },
+                "low_grade": "Kindergarten",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.599Z",
+                "school_number": "1315",
+                "id": "56a3deb391a86e711a000122"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000122"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "name": "Sentrylightning",
+                "low_grade": "Kindergarten",
+                "nces_id": "",
+                "location": {
+                    "zip": "40758",
+                    "address": "27472 Eichmann Ford",
+                    "city": "San Martin",
+                    "state": "MO"
+                },
+                "principal": {
+                    "email": "ethan.brown@example.com",
+                    "name": "Weaverwood"
+                },
+                "created": "2016-01-23T20:12:35.600Z",
+                "sis_id": "1320",
+                "high_grade": "4",
+                "school_number": "1320",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.601Z",
+                "phone": "(666) 909-5100",
+                "id": "56a3deb391a86e711a000123"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000123"
+        },
+        {
+            "data": {
+                "high_grade": "9",
+                "low_grade": "6",
+                "phone": "",
+                "sis_id": "1325",
+                "last_modified": "2016-01-23T20:12:35.608Z",
+                "location": {
+                    "address": "39794 Ramiro Keys",
+                    "city": "New Deal",
+                    "state": "TN",
+                    "zip": "15059"
+                },
+                "state_id": "",
+                "nces_id": "",
+                "principal": {
+                    "email": "a.martinez@example.com",
+                    "name": "Heronorth"
+                },
+                "created": "2016-01-23T20:12:35.602Z",
+                "school_number": "1325",
+                "name": "Slayergarnet",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000124"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000124"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.610Z",
+                "nces_id": "",
+                "school_number": "1330",
+                "name": "Chillercold",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.611Z",
+                "sis_id": "1330",
+                "location": {
+                    "city": "Ransom Canyon",
+                    "state": "NM",
+                    "zip": "98564",
+                    "address": "27294 Karine Dam"
+                },
+                "phone": "",
+                "principal": {
+                    "email": "avery.anderson@example.com",
+                    "name": "Buffalosmall"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "Kindergarten",
+                "high_grade": "4",
+                "id": "56a3deb391a86e711a000125"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000125"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "4",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "sis_id": "1335",
+                "nces_id": "",
+                "school_number": "1335",
+                "phone": "",
+                "low_grade": "Kindergarten",
+                "location": {
+                    "address": "",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.627Z",
+                "state_id": "",
+                "name": "Tradershy",
+                "created": "2016-01-23T20:12:35.613Z",
+                "id": "56a3deb391a86e711a000126"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000126"
+        },
+        {
+            "data": {
+                "low_grade": "9",
+                "location": {
+                    "state": "CO",
+                    "zip": "27741",
+                    "address": "597 Arlene Loop",
+                    "city": "San Martin"
+                },
+                "created": "2016-01-23T20:12:35.628Z",
+                "name": "Mistressaquamarine",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1336",
+                "phone": "",
+                "sis_id": "1336",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "last_modified": "2016-01-23T20:12:35.630Z",
+                "high_grade": "PostGraduate",
+                "nces_id": "",
+                "state_id": "",
+                "id": "56a3deb391a86e711a000127"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000127"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "phone": "",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.631Z",
+                "nces_id": "",
+                "name": "Hairpetal",
+                "location": {
+                    "city": "Hoonah",
+                    "state": "MA",
+                    "zip": "26909",
+                    "address": "61540 Josue Parks"
+                },
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "school_number": "1337",
+                "sis_id": "1337",
+                "last_modified": "2016-01-23T20:12:35.632Z",
+                "id": "56a3deb391a86e711a000128"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000128"
+        },
+        {
+            "data": {
+                "location": {
+                    "city": "Plympton",
+                    "state": "KS",
+                    "zip": "52649",
+                    "address": "965 Simeon Plaza"
+                },
+                "low_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1340",
+                "created": "2016-01-23T20:12:35.637Z",
+                "sis_id": "1340",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "name": "Lizardpear",
+                "phone": "",
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.638Z",
+                "principal": {
+                    "email": "john paul.jinglehimerschmidt@example.com",
+                    "name": "Leadernoon"
+                },
+                "id": "56a3deb391a86e711a000129"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000129"
+        },
+        {
+            "data": {
+                "name": "Gamblersilent",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1345",
+                "sis_id": "1345",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.641Z",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.639Z",
+                "high_grade": "4",
+                "location": {
+                    "address": "251 Adriel Tunnel",
+                    "city": "Derby Center",
+                    "state": "WV",
+                    "zip": "69374"
+                },
+                "phone": "1-(540) 849-3180",
+                "low_grade": "Kindergarten",
+                "id": "56a3deb391a86e711a00012a"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012a"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.641Z",
+                "sis_id": "1350",
+                "state_id": "",
+                "high_grade": "PostGraduate",
+                "name": "Wingwarp",
+                "last_modified": "2016-01-23T20:12:35.643Z",
+                "location": {
+                    "address": "",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "school_number": "1350",
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "low_grade": "Kindergarten",
+                "id": "56a3deb391a86e711a00012b"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012b"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "name": "Binderash",
+                "created": "2016-01-23T20:12:35.643Z",
+                "high_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.644Z",
+                "phone": "",
+                "school_number": "1360",
+                "state_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "sis_id": "1360",
+                "location": {
+                    "address": "28454 Billie Flats",
+                    "city": "Plympton",
+                    "state": "IN",
+                    "zip": "04566"
+                },
+                "low_grade": "6",
+                "id": "56a3deb391a86e711a00012c"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012c"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.651Z",
+                "principal": {
+                    "name": "",
+                    "email": ""
+                },
+                "phone": "(702) 581-1578",
+                "sis_id": "1365",
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "Kindergarten",
+                "name": "Forgervaliant",
+                "school_number": "1365",
+                "high_grade": "3",
+                "location": {
+                    "address": "5456 Auer Fields",
+                    "city": "Skidaway Island",
+                    "state": "IA",
+                    "zip": "87156"
+                },
+                "state_id": "",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.651Z",
+                "id": "56a3deb391a86e711a00012d"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012d"
+        },
+        {
+            "data": {
+                "sis_id": "1370",
+                "created": "2016-01-23T20:12:35.653Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "address": "3309 Gutkowski Garden",
+                    "city": "Campden",
+                    "state": "TX",
+                    "zip": "06683"
+                },
+                "state_id": "",
+                "school_number": "1370",
+                "principal": {
+                    "email": "chloe.moore@example.com",
+                    "name": "Fingerpickle"
+                },
+                "low_grade": "Kindergarten",
+                "phone": "",
+                "name": "Mastermint",
+                "last_modified": "2016-01-23T20:12:35.654Z",
+                "nces_id": "",
+                "high_grade": "4",
+                "id": "56a3deb391a86e711a00012e"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012e"
+        },
+        {
+            "data": {
+                "location": {
+                    "zip": "52994",
+                    "address": "41947 Weimann Rapid",
+                    "city": "Kingsbridge",
+                    "state": "AZ"
+                },
+                "nces_id": "",
+                "low_grade": "9",
+                "name": "Yakmaple",
+                "phone": "",
+                "last_modified": "2016-01-23T20:12:35.669Z",
+                "sis_id": "1410",
+                "state_id": "",
+                "principal": {
+                    "email": "lily.wilson@example.com",
+                    "name": "Orioleband"
+                },
+                "high_grade": "PostGraduate",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1410",
+                "created": "2016-01-23T20:12:35.655Z",
+                "id": "56a3deb391a86e711a00012f"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00012f"
+        },
+        {
+            "data": {
+                "location": {
+                    "address": "6951 McGlynn Point",
+                    "city": "Burrton",
+                    "state": "IN",
+                    "zip": "44344"
+                },
+                "state_id": "",
+                "school_number": "1420",
+                "nces_id": "",
+                "sis_id": "1420",
+                "created": "2016-01-23T20:12:35.671Z",
+                "low_grade": "9",
+                "phone": "1-(351) 959-0097",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.671Z",
+                "name": "Razorcute",
+                "high_grade": "PostGraduate",
+                "principal": {
+                    "email": "john-paul.jinglehimer schmidt@example.com",
+                    "name": "Slicersharp"
+                },
+                "id": "56a3deb391a86e711a000130"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000130"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "state_id": "",
+                "sis_id": "1430",
+                "location": {
+                    "city": "New Deal",
+                    "state": "AK",
+                    "zip": "40813",
+                    "address": "10744 Ryley Tunnel"
+                },
+                "phone": "",
+                "school_number": "1430",
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "created": "2016-01-23T20:12:35.673Z",
+                "last_modified": "2016-01-23T20:12:35.674Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "principal": {
+                    "email": "daniel.martinez@example.com",
+                    "name": "Killerspiral"
+                },
+                "name": "Foxvine",
+                "id": "56a3deb391a86e711a000131"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000131"
+        },
+        {
+            "data": {
+                "sis_id": "1440",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "zip": "63012",
+                    "address": "22128 Watsica Groves",
+                    "city": "Kingsbridge",
+                    "state": "MA"
+                },
+                "created": "2016-01-23T20:12:35.676Z",
+                "state_id": "",
+                "principal": {
+                    "email": "sadurniño.jackson@example.com",
+                    "name": "Crowngreen"
+                },
+                "last_modified": "2016-01-23T20:12:35.678Z",
+                "low_grade": "11",
+                "name": "Throatthread",
+                "nces_id": "",
+                "school_number": "1440",
+                "phone": "",
+                "high_grade": "PostGraduate",
+                "id": "56a3deb391a86e711a000132"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000132"
+        },
+        {
+            "data": {
+                "principal": {
+                    "name": "Wyrmwater",
+                    "email": "james.harris@example.com"
+                },
+                "location": {
+                    "state": "MI",
+                    "zip": "44057",
+                    "address": "92491 Sauer Lakes",
+                    "city": "Ransom Canyon"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "11",
+                "low_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.681Z",
+                "nces_id": "",
+                "sis_id": "1441",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.679Z",
+                "phone": "",
+                "school_number": "1441",
+                "name": "Cowlslow",
+                "id": "56a3deb391a86e711a000133"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000133"
+        },
+        {
+            "data": {
+                "high_grade": "PostGraduate",
+                "low_grade": "6",
+                "state_id": "",
+                "location": {
+                    "state": "WV",
+                    "zip": "06795",
+                    "address": "70937 Robel Fords",
+                    "city": "Lucien"
+                },
+                "name": "Mindnebula",
+                "school_number": "1450",
+                "sis_id": "1450",
+                "created": "2016-01-23T20:12:35.682Z",
+                "principal": {
+                    "email": "",
+                    "name": "Twisterbird"
+                },
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.683Z",
+                "nces_id": "",
+                "id": "56a3deb391a86e711a000134"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000134"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.689Z",
+                "high_grade": "PostGraduate",
+                "principal": {
+                    "email": "",
+                    "name": "Monkeytopaz"
+                },
+                "created": "2016-01-23T20:12:35.683Z",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "nces_id": "",
+                "low_grade": "6",
+                "phone": "(656) 805-3424",
+                "location": {
+                    "address": "33374 Leuschke Wells",
+                    "city": "Ransom Canyon",
+                    "state": "PA",
+                    "zip": "82765"
+                },
+                "sis_id": "1460",
+                "school_number": "1460",
+                "name": "Thiefround",
+                "id": "56a3deb391a86e711a000135"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000135"
+        },
+        {
+            "data": {
+                "location": {
+                    "state": "VA",
+                    "zip": "42056",
+                    "address": "61450 Gutmann Plains",
+                    "city": "Hoonah"
+                },
+                "low_grade": "6",
+                "nces_id": "",
+                "state_id": "",
+                "school_number": "1470",
+                "sis_id": "1470",
+                "last_modified": "2016-01-23T20:12:35.692Z",
+                "principal": {
+                    "name": "Duketree",
+                    "email": "andrew.jinglehimer'schmidt@example.com"
+                },
+                "high_grade": "PostGraduate",
+                "name": "Frillspiral",
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.691Z",
+                "phone": "",
+                "id": "56a3deb391a86e711a000136"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000136"
+        },
+        {
+            "data": {
+                "name": "Lasherwalnut",
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "Kindergarten",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.694Z",
+                "school_number": "1501",
+                "last_modified": "2016-01-23T20:12:35.694Z",
+                "sis_id": "1501",
+                "phone": "",
+                "state_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "location": {
+                    "state": "",
+                    "zip": "",
+                    "address": "",
+                    "city": ""
+                },
+                "low_grade": "Kindergarten",
+                "id": "56a3deb391a86e711a000137"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000137"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "school_number": "1502",
+                "low_grade": "Kindergarten",
+                "sis_id": "1502",
+                "district": "56a3cdecbe19c701000005fe",
+                "state_id": "",
+                "name": "Mareflower",
+                "phone": "",
+                "high_grade": "Kindergarten",
+                "created": "2016-01-23T20:12:35.696Z",
+                "last_modified": "2016-01-23T20:12:35.709Z",
+                "location": {
+                    "zip": "",
+                    "address": "",
+                    "city": "",
+                    "state": ""
+                },
+                "id": "56a3deb391a86e711a000138"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000138"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "Kindergarten",
+                "last_modified": "2016-01-23T20:12:35.712Z",
+                "location": {
+                    "state": "",
+                    "zip": "",
+                    "address": "",
+                    "city": ""
+                },
+                "sis_id": "1503",
+                "phone": "",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.711Z",
+                "school_number": "1503",
+                "name": "Antlerquasar",
+                "nces_id": "",
+                "high_grade": "Kindergarten",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "id": "56a3deb391a86e711a000139"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000139"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "address": "",
+                    "city": "",
+                    "state": "",
+                    "zip": ""
+                },
+                "nces_id": "",
+                "school_number": "1504",
+                "sis_id": "1504",
+                "last_modified": "2016-01-23T20:12:35.715Z",
+                "state_id": "",
+                "low_grade": "Kindergarten",
+                "created": "2016-01-23T20:12:35.714Z",
+                "phone": "",
+                "principal": {
+                    "email": "",
+                    "name": ""
+                },
+                "high_grade": "Kindergarten",
+                "name": "Serpentmaple",
+                "id": "56a3deb391a86e711a00013a"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013a"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.717Z",
+                "low_grade": "9",
+                "location": {
+                    "address": "227 Edd Street",
+                    "city": "Baldock",
+                    "state": "MN",
+                    "zip": "36830"
+                },
+                "name": "Gamblersavage",
+                "created": "2016-01-23T20:12:35.716Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "sis_id": "1990",
+                "state_id": "",
+                "phone": "",
+                "principal": {
+                    "email": "mary jane.garcia@example.com",
+                    "name": "Whimseywhip"
+                },
+                "school_number": "1990",
+                "nces_id": "",
+                "high_grade": "PostGraduate",
+                "id": "56a3deb391a86e711a00013b"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013b"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.719Z",
+                "phone": "(602) 587-4398",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.718Z",
+                "location": {
+                    "city": "Hoonah",
+                    "state": "OH",
+                    "zip": "22884",
+                    "address": "371 Ari Wall"
+                },
+                "name": "Cattitanium",
+                "high_grade": "PostGraduate",
+                "low_grade": "9",
+                "nces_id": "",
+                "principal": {
+                    "name": "Runnerpaper",
+                    "email": "natalie.thomas@example.com"
+                },
+                "sis_id": "1991",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "1991",
+                "id": "56a3deb391a86e711a00013c"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013c"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "name": "Jaguarnebula",
+                "phone": "(563) 520-3455",
+                "school_number": "2010",
+                "sis_id": "2010",
+                "low_grade": "6",
+                "created": "2016-01-23T20:12:35.723Z",
+                "high_grade": "9",
+                "nces_id": "",
+                "principal": {
+                    "email": "x.smith@example.com",
+                    "name": "Musesleet"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.724Z",
+                "location": {
+                    "address": "5415 Okuneva Fall",
+                    "city": "Ransom Canyon",
+                    "state": "NY",
+                    "zip": "93017"
+                },
+                "id": "56a3deb391a86e711a00013d"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013d"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "phone": "(638) 673-6401",
+                "low_grade": "6",
+                "principal": {
+                    "email": "elijah.castañeda@example.com",
+                    "name": "Pumatiny"
+                },
+                "created": "2016-01-23T20:12:35.730Z",
+                "high_grade": "9",
+                "location": {
+                    "zip": "50972",
+                    "address": "17424 Miller Courts",
+                    "city": "Berkhamsted",
+                    "state": "KY"
+                },
+                "last_modified": "2016-01-23T20:12:35.731Z",
+                "nces_id": "",
+                "sis_id": "2040",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "2040",
+                "name": "Kinggem",
+                "id": "56a3deb391a86e711a00013e"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013e"
+        },
+        {
+            "data": {
+                "principal": {
+                    "email": "daniel.jinglehimer-schmidt@example.com",
+                    "name": "Forgerhickory"
+                },
+                "last_modified": "2016-01-23T20:12:35.733Z",
+                "nces_id": "",
+                "state_id": "",
+                "high_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.732Z",
+                "phone": "(512) 548-5608",
+                "school_number": "2140",
+                "sis_id": "2140",
+                "name": "Wolfyellow",
+                "low_grade": "6",
+                "location": {
+                    "zip": "53748",
+                    "address": "339 Pouros Path",
+                    "city": "Skidaway Island",
+                    "state": "FL"
+                },
+                "id": "56a3deb391a86e711a00013f"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00013f"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.736Z",
+                "location": {
+                    "city": "Derby Center",
+                    "state": "MO",
+                    "zip": "97345",
+                    "address": "496 Bernier Street"
+                },
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.734Z",
+                "high_grade": "9",
+                "district": "56a3cdecbe19c701000005fe",
+                "phone": "",
+                "low_grade": "6",
+                "principal": {
+                    "email": "bartholomew.miller@example.com",
+                    "name": "Piratebush"
+                },
+                "sis_id": "2190",
+                "state_id": "",
+                "school_number": "2190",
+                "name": "Terriermoor",
+                "id": "56a3deb391a86e711a000140"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000140"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.737Z",
+                "school_number": "2360",
+                "sis_id": "2360",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.752Z",
+                "high_grade": "9",
+                "low_grade": "6",
+                "principal": {
+                    "name": "Minnowdew",
+                    "email": "emma.thomas@example.com"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "name": "Masterlead",
+                "nces_id": "",
+                "phone": "",
+                "location": {
+                    "state": "SD",
+                    "zip": "07753",
+                    "address": "659 Maximo Spur",
+                    "city": "Burrton"
+                },
+                "id": "56a3deb391a86e711a000141"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000141"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.754Z",
+                "name": "Lightningclever",
+                "district": "56a3cdecbe19c701000005fe",
+                "sis_id": "2440",
+                "high_grade": "9",
+                "nces_id": "",
+                "last_modified": "2016-01-23T20:12:35.755Z",
+                "location": {
+                    "city": "Lucien",
+                    "state": "MD",
+                    "zip": "47759",
+                    "address": "5556 Collier Crossing"
+                },
+                "state_id": "",
+                "principal": {
+                    "email": "john paul.thompson@example.com",
+                    "name": "Tigerrift"
+                },
+                "school_number": "2440",
+                "low_grade": "4",
+                "phone": "",
+                "id": "56a3deb391a86e711a000142"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000142"
+        },
+        {
+            "data": {
+                "sis_id": "2450",
+                "name": "Stalkercyber",
+                "phone": "",
+                "location": {
+                    "zip": "56436",
+                    "address": "4140 Rosalee Lock",
+                    "city": "Bury",
+                    "state": "CA"
+                },
+                "created": "2016-01-23T20:12:35.756Z",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.757Z",
+                "high_grade": "9",
+                "low_grade": "6",
+                "principal": {
+                    "email": "bartholomew.robinson@example.com",
+                    "name": "Shriekrelic"
+                },
+                "nces_id": "",
+                "school_number": "2450",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000143"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000143"
+        },
+        {
+            "data": {
+                "location": {
+                    "zip": "31869",
+                    "address": "7707 Buckridge Street",
+                    "city": "Berkhamsted",
+                    "state": "MS"
+                },
+                "sis_id": "2950",
+                "high_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.759Z",
+                "school_number": "2950",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "principal": {
+                    "name": "Crownevening",
+                    "email": "william.williams@example.com"
+                },
+                "phone": "",
+                "created": "2016-01-23T20:12:35.758Z",
+                "low_grade": "6",
+                "nces_id": "",
+                "name": "Princefoul",
+                "id": "56a3deb391a86e711a000144"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000144"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "high_grade": "6",
+                "last_modified": "2016-01-23T20:12:35.762Z",
+                "name": "Keepervoid",
+                "created": "2016-01-23T20:12:35.760Z",
+                "sis_id": "4022",
+                "low_grade": "Kindergarten",
+                "phone": "1-(679) 973-1896",
+                "state_id": "",
+                "location": {
+                    "state": "HI",
+                    "zip": "06589",
+                    "address": "6764 Steuber Mall",
+                    "city": "Hoonah"
+                },
+                "school_number": "4022",
+                "principal": {
+                    "email": "emily.robinson@example.com",
+                    "name": "Koaladew"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000145"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000145"
+        },
+        {
+            "data": {
+                "low_grade": "PreKindergarten",
+                "principal": {
+                    "email": "lily.jones@example.com",
+                    "name": "Chillfate"
+                },
+                "school_number": "4030",
+                "last_modified": "2016-01-23T20:12:35.770Z",
+                "name": "Trackerspice",
+                "nces_id": "",
+                "created": "2016-01-23T20:12:35.762Z",
+                "location": {
+                    "zip": "14822",
+                    "address": "5987 Pollich Causeway",
+                    "city": "Berkhamsted",
+                    "state": "ND"
+                },
+                "phone": "1-(227) 769-7238",
+                "state_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "4",
+                "sis_id": "4030",
+                "id": "56a3deb391a86e711a000146"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000146"
+        },
+        {
+            "data": {
+                "nces_id": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "4031",
+                "state_id": "",
+                "low_grade": "PreKindergarten",
+                "created": "2016-01-23T20:12:35.771Z",
+                "phone": "",
+                "high_grade": "4",
+                "principal": {
+                    "name": "Crystalpeat",
+                    "email": "james.jinglehimer-schmidt@example.com"
+                },
+                "sis_id": "4031",
+                "location": {
+                    "state": "MA",
+                    "zip": "43939",
+                    "address": "82425 Alisa Inlet",
+                    "city": "Campden"
+                },
+                "name": "Necknoble",
+                "last_modified": "2016-01-23T20:12:35.772Z",
+                "id": "56a3deb391a86e711a000147"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000147"
+        },
+        {
+            "data": {
+                "state_id": "",
+                "nces_id": "",
+                "name": "Lizardjet",
+                "last_modified": "2016-01-23T20:12:35.774Z",
+                "sis_id": "4033",
+                "high_grade": "9",
+                "principal": {
+                    "email": "william.moore@example.com",
+                    "name": "Kangarooribbon"
+                },
+                "location": {
+                    "city": "Lucien",
+                    "state": "DE",
+                    "zip": "21136",
+                    "address": "59310 Emmy Trail"
+                },
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "3",
+                "created": "2016-01-23T20:12:35.773Z",
+                "school_number": "4033",
+                "id": "56a3deb391a86e711a000148"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000148"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.776Z",
+                "high_grade": "6",
+                "name": "Griffinfantasy",
+                "nces_id": "",
+                "principal": {
+                    "email": "mason.miller@example.com",
+                    "name": "Dutchessquiver"
+                },
+                "school_number": "4052",
+                "low_grade": "PreKindergarten",
+                "sis_id": "4052",
+                "state_id": "",
+                "phone": "",
+                "location": {
+                    "address": "51647 Kulas Mount",
+                    "city": "Burrton",
+                    "state": "IA",
+                    "zip": "38072"
+                },
+                "created": "2016-01-23T20:12:35.775Z",
+                "district": "56a3cdecbe19c701000005fe",
+                "id": "56a3deb391a86e711a000149"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000149"
+        },
+        {
+            "data": {
+                "school_number": "4053",
+                "sis_id": "4053",
+                "created": "2016-01-23T20:12:35.778Z",
+                "last_modified": "2016-01-23T20:12:35.792Z",
+                "name": "Mindfierce",
+                "nces_id": "",
+                "principal": {
+                    "email": "alexander.jackson@example.com",
+                    "name": "Banelinen"
+                },
+                "low_grade": "PreKindergarten",
+                "location": {
+                    "address": "383 Maybell Spurs",
+                    "city": "Newstead",
+                    "state": "ND",
+                    "zip": "19099"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "high_grade": "9",
+                "phone": "",
+                "state_id": "",
+                "id": "56a3deb391a86e711a00014a"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014a"
+        },
+        {
+            "data": {
+                "high_grade": "9",
+                "last_modified": "2016-01-23T20:12:35.795Z",
+                "sis_id": "4055",
+                "state_id": "",
+                "name": "Masterdog",
+                "principal": {
+                    "email": "abigail.smith@example.com",
+                    "name": "Dukesplit"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "created": "2016-01-23T20:12:35.793Z",
+                "phone": "",
+                "low_grade": "PreKindergarten",
+                "location": {
+                    "state": "MA",
+                    "zip": "91919",
+                    "address": "45658 Johnston Lake",
+                    "city": "Campden"
+                },
+                "school_number": "4055",
+                "nces_id": "",
+                "id": "56a3deb391a86e711a00014b"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014b"
+        },
+        {
+            "data": {
+                "school_number": "4061",
+                "name": "Lightningtabby",
+                "district": "56a3cdecbe19c701000005fe",
+                "principal": {
+                    "email": "chloe.jinglehimer schmidt@example.com",
+                    "name": "Thiefwhite"
+                },
+                "last_modified": "2016-01-23T20:12:35.798Z",
+                "low_grade": "PreKindergarten",
+                "created": "2016-01-23T20:12:35.796Z",
+                "location": {
+                    "zip": "14782",
+                    "address": "726 Robel Neck",
+                    "city": "Kingsbridge",
+                    "state": "KY"
+                },
+                "sis_id": "4061",
+                "phone": "",
+                "nces_id": "",
+                "high_grade": "6",
+                "state_id": "",
+                "id": "56a3deb391a86e711a00014c"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014c"
+        },
+        {
+            "data": {
+                "location": {
+                    "state": "HI",
+                    "zip": "07073",
+                    "address": "140 Schuster Crescent",
+                    "city": "Hoonah"
+                },
+                "last_modified": "2016-01-23T20:12:35.800Z",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.798Z",
+                "name": "Elkpickle",
+                "principal": {
+                    "name": "Unicornbead",
+                    "email": "addison.garcia@example.com"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "PreKindergarten",
+                "school_number": "4062",
+                "sis_id": "4062",
+                "nces_id": "",
+                "high_grade": "6",
+                "phone": "1-(203) 473-6698",
+                "id": "56a3deb391a86e711a00014d"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014d"
+        },
+        {
+            "data": {
+                "high_grade": "6",
+                "low_grade": "PreKindergarten",
+                "school_number": "4070",
+                "nces_id": "",
+                "principal": {
+                    "email": "mary jane.o@example.com",
+                    "name": "Raccoonarrow"
+                },
+                "created": "2016-01-23T20:12:35.800Z",
+                "sis_id": "4070",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.801Z",
+                "name": "Crowseed",
+                "phone": "1-(461) 795-3944",
+                "district": "56a3cdecbe19c701000005fe",
+                "location": {
+                    "city": "Berkhamsted",
+                    "state": "CO",
+                    "zip": "62287",
+                    "address": "93649 Swift Forges"
+                },
+                "id": "56a3deb391a86e711a00014e"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014e"
+        },
+        {
+            "data": {
+                "last_modified": "2016-01-23T20:12:35.809Z",
+                "name": "Mustangdew",
+                "nces_id": "",
+                "high_grade": "6",
+                "location": {
+                    "city": "Derby Center",
+                    "state": "CT",
+                    "zip": "47610",
+                    "address": "9510 Shanahan Ways"
+                },
+                "school_number": "4080",
+                "phone": "",
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "PreKindergarten",
+                "created": "2016-01-23T20:12:35.808Z",
+                "principal": {
+                    "email": "avery.garcia@example.com",
+                    "name": "Grabberaquamarine"
+                },
+                "sis_id": "4080",
+                "state_id": "",
+                "id": "56a3deb391a86e711a00014f"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a00014f"
+        },
+        {
+            "data": {
+                "phone": "",
+                "school_number": "4081",
+                "principal": {
+                    "email": "mason.smith@example.com",
+                    "name": "Snoutdestiny"
+                },
+                "high_grade": "6",
+                "name": "Kickerwater",
+                "state_id": "",
+                "low_grade": "PreKindergarten",
+                "district": "56a3cdecbe19c701000005fe",
+                "last_modified": "2016-01-23T20:12:35.811Z",
+                "created": "2016-01-23T20:12:35.810Z",
+                "sis_id": "4081",
+                "location": {
+                    "state": "NM",
+                    "zip": "28606",
+                    "address": "741 Wuckert Mission",
+                    "city": "Cienega Springs"
+                },
+                "nces_id": "",
+                "id": "56a3deb391a86e711a000150"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000150"
+        },
+        {
+            "data": {
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "4082",
+                "principal": {
+                    "name": "Stingerrhinestone",
+                    "email": "elijah.davis@example.com"
+                },
+                "name": "Stormcaramel",
+                "nces_id": "",
+                "phone": "",
+                "sis_id": "4082",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.813Z",
+                "high_grade": "5",
+                "location": {
+                    "address": "98116 VonRueden Lodge",
+                    "city": "New Deal",
+                    "state": "ND",
+                    "zip": "52989"
+                },
+                "low_grade": "PreKindergarten",
+                "created": "2016-01-23T20:12:35.812Z",
+                "id": "56a3deb391a86e711a000151"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000151"
+        },
+        {
+            "data": {
+                "created": "2016-01-23T20:12:35.814Z",
+                "school_number": "4084",
+                "location": {
+                    "zip": "28145",
+                    "address": "9896 Stark Tunnel",
+                    "city": "Newstead",
+                    "state": "CA"
+                },
+                "district": "56a3cdecbe19c701000005fe",
+                "low_grade": "PreKindergarten",
+                "last_modified": "2016-01-23T20:12:35.817Z",
+                "high_grade": "6",
+                "nces_id": "",
+                "principal": {
+                    "email": "sophia.brown@example.com",
+                    "name": "Parrotdenim"
+                },
+                "name": "Gamblerhelix",
+                "state_id": "",
+                "phone": "",
+                "sis_id": "4084",
+                "id": "56a3deb391a86e711a000152"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000152"
+        },
+        {
+            "data": {
+                "school_number": "4100",
+                "district": "56a3cdecbe19c701000005fe",
+                "state_id": "",
+                "created": "2016-01-23T20:12:35.818Z",
+                "location": {
+                    "zip": "42638",
+                    "address": "2615 Hauck Squares",
+                    "city": "Northleach",
+                    "state": "PA"
+                },
+                "principal": {
+                    "email": "lily.smith@example.com",
+                    "name": "Leopardcrack"
+                },
+                "phone": "(292) 560-7995",
+                "nces_id": "",
+                "name": "Samuraigarnet",
+                "last_modified": "2016-01-23T20:12:35.833Z",
+                "low_grade": "PreKindergarten",
+                "sis_id": "4100",
+                "high_grade": "6",
+                "id": "56a3deb391a86e711a000153"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000153"
+        },
+        {
+            "data": {
+                "high_grade": "6",
+                "created": "2016-01-23T20:12:35.834Z",
+                "name": "Forgerfancy",
+                "principal": {
+                    "email": "avery.martinez@example.com",
+                    "name": "Traderglaze"
+                },
+                "sis_id": "4113",
+                "district": "56a3cdecbe19c701000005fe",
+                "school_number": "4113",
+                "phone": "",
+                "state_id": "",
+                "last_modified": "2016-01-23T20:12:35.835Z",
+                "nces_id": "",
+                "location": {
+                    "address": "634 Carroll Corner",
+                    "city": "Burrton",
+                    "state": "IL",
+                    "zip": "51089"
+                },
+                "low_grade": "PreKindergarten",
+                "id": "56a3deb391a86e711a000154"
+            },
+            "uri": "/v1.2/schools/56a3deb391a86e711a000154"
+        }
+    ],
+    "paging": {
+        "current": 1,
+        "total": 3,
+        "count": 240
+    },
+    "links": [
+        {
+            "rel": "self",
+            "uri": "/v1.2/schools"
+        },
+        {
+            "rel": "next",
+            "uri": "/v1.2/schools?starting_after=56a3deb391a86e711a000154"
+        }
+    ]
+}
