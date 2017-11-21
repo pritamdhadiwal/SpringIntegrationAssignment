@@ -28,7 +28,7 @@ public class FileHandler {
 			List<Schools> schoolList = new ArrayList<Schools>();
 			schoolList.add(schools);
 			String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(schoolList);
-			System.out.println(json);
+//			System.out.println(json);
 			System.out.println("Now as CSV: ");
 
 			// initialize and configure the mapper
@@ -55,7 +55,7 @@ public class FileHandler {
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
 
-			System.out.println(csvMapper.writer(schema).writeValueAsString(list));
+			//System.out.println(csvMapper.writer(schema).writeValueAsString(list));
 		} catch (Exception e) {
 			
 			e.printStackTrace();

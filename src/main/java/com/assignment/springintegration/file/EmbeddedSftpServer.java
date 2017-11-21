@@ -3,20 +3,14 @@ package com.assignment.springintegration.file;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.security.PublicKey;
-import java.util.Arrays;
 import java.util.Collections;
 
-import org.apache.sshd.common.NamedFactory;
 import org.apache.sshd.common.file.virtualfs.VirtualFileSystemFactory;
-import org.apache.sshd.server.Command;
 import org.apache.sshd.server.SshServer;
 import org.apache.sshd.server.auth.password.PasswordAuthenticator;
-import org.apache.sshd.server.auth.pubkey.PublickeyAuthenticator;
 import org.apache.sshd.server.keyprovider.SimpleGeneratorHostKeyProvider;
 import org.apache.sshd.server.scp.ScpCommandFactory;
 import org.apache.sshd.server.session.ServerSession;
-import org.apache.sshd.server.subsystem.sftp.SftpSubsystem;
 import org.apache.sshd.server.subsystem.sftp.SftpSubsystemFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.SmartLifecycle;
@@ -47,8 +41,8 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		this.server.setPort(this.port);
-		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
+		this.server.setPort(0);
+	    this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
 		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
@@ -63,14 +57,6 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 			}
 
 		});
-		this.server.setPublickeyAuthenticator(new PublickeyAuthenticator() {
-	        @Override
-	        public boolean authenticate(String username, PublicKey key, ServerSession session) {
-	            return true;
-	        }
-	    });
-		
-		//this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider(new File("hostkey.ser")));
 		
 		final String pathname = System.getProperty("java.io.tmpdir") + File.separator + "sftptest" + File.separator;
 		new File(pathname).mkdirs();

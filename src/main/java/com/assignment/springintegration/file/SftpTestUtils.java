@@ -17,15 +17,16 @@ public class SftpTestUtils {
 		if (template != null) {
 			final ByteArrayInputStream stream = new ByteArrayInputStream("foo".getBytes());
 			template.execute((SessionCallback<LsEntry, Void>) session -> {
+			
 				try {
-					session.mkdir("si.sftp.sample");
+					session.mkdir("sftpSample");
 				}
 				catch (Exception e) {
 					assertThat(e.getMessage(), containsString("failed to create"));
 				}
 				for (int i = 0; i < fileNames.length; i++) {
 					stream.reset();
-					session.write(stream, "si.sftp.sample/" + fileNames[i]);
+					session.write(stream, "sftpSample/" + fileNames[i]);
 				}
 				return null;
 			});
