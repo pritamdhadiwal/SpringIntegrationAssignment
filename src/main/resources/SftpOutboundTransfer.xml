@@ -10,7 +10,7 @@
 			http://www.springframework.org/schema/integration/file
 			http://www.springframework.org/schema/integration/file/spring-integration-file.xsd">
 
-	<import resource="SftpSampleCommon.xml" />
+	<import resource="SftpConfiguration.xml" />
 	
 	<int:channel id="inputChannel"/>
 

@@ -17,7 +17,7 @@
 
 	 <context:property-placeholder location="classpath:application.properties" />
 	 
-     <import resource="SftpSampleCommon.xml" />
+     <import resource="SftpConfiguration.xml" />
 
 	<file:inbound-channel-adapter id="filesIn"
 		directory="${json.dir}" filter="onlyJsonFiles" auto-startup="true">
