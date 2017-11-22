@@ -2,6 +2,7 @@ package com.assignment.springintegration.test;
 
 import java.io.File;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.integration.file.remote.RemoteFileTemplate;
@@ -16,13 +17,14 @@ import com.jcraft.jsch.ChannelSftp.LsEntry;
 
 public class SftpOutboundTransferTest {
 	@Test
+	
 	public void testOutbound() throws Exception{
 
 		final String sourceFileName = "src/test/write/output.csv";
 		final String destinationFileName = sourceFileName ;
 
 		final ClassPathXmlApplicationContext ac =
-			new ClassPathXmlApplicationContext("/SftpOutboundTransfer.xml",
+			new ClassPathXmlApplicationContext("/ApplicationContext.xml",
 					SftpOutboundTransferTest.class);
     	@SuppressWarnings("unchecked")
     	SessionFactory<LsEntry> sessionFactory = ac.getBean(CachingSessionFactory.class);

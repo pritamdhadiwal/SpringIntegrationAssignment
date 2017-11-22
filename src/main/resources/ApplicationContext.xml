@@ -17,7 +17,7 @@
 
 	 <context:property-placeholder location="classpath:application.properties" />
 	 
-     <import resource="SftpConfiguration.xml" />
+    <import resource="SftpConfiguration.xml" />
 
 	<file:inbound-channel-adapter id="filesIn"
 		directory="${json.dir}" filter="onlyJsonFiles" auto-startup="true">
@@ -25,34 +25,40 @@
 	</file:inbound-channel-adapter>
 
 	<int:service-activator input-channel="filesIn"
-		output-channel="filesOut" ref="transformer" method="handleFile" />
+		output-channel="filesOut" ref="transformer" method="handleFile" >
+	</int:service-activator>	
 
-	<file:outbound-channel-adapter id="filesOut"
-		directory="${csv.dir}" />
+	<file:outbound-channel-adapter id="filesOut" directory="${csv.dir}" >
+	</file:outbound-channel-adapter>
 
-	<bean id="transformer" class="com.assignment.springintegration.file.JsonToCSVFileConvertor" />
-
-
-	
-	<int:channel id="filesOut"/>
-
+	<bean id="transformer" class="com.assignment.springintegration.file.JsonToCSVFileTransformer" />
 
 	<int-sftp:inbound-channel-adapter id="sftpInbondAdapter"
 				session-factory="sftpSessionFactory"
 				channel="filesOut" 
+				filename-pattern="*.csv"
 				local-directory="${csv.dir}"
 				remote-directory="si.sftp.sample"
-				temporary-file-suffix=".writing"
                 delete-remote-files="false">
 			<int:poller fixed-rate="1000" />
 	</int-sftp:inbound-channel-adapter>
 	
-
-	
+	<int-sftp:outbound-gateway session-factory="sftpSessionFactory"
+                            request-channel="filesOut"
+                            command="put"
+                            command-options="-stream"
+                            remote-directory="si.sftp.sample"
+                            reply-channel="sftpchannel" >
+     </int-sftp:outbound-gateway>                       
+                            
+    <int:channel id="filesOut"/>
+	<int:channel id="sftpchannel"/>
 	<bean id="onlyJsonFiles"
 		class="org.springframework.integration.file.config.FileListFilterFactoryBean"
 		p:filenamePattern="*.json" />
-
-
+		
+	<bean id="onlyCsvFiles"
+		class="org.springframework.integration.file.config.FileListFilterFactoryBean"
+		p:filenamePattern="*.csv" />
 
 </beans>

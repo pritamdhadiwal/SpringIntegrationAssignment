@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
-public class JsonToCSVFileConvertor {
+public class JsonToCSVFileTransformer {
 	
 	
     public File handleFile(File input) throws  IOException {
@@ -27,9 +27,7 @@ public class JsonToCSVFileConvertor {
 			List<CSVTemplateData> list = populateCsv(schools);
 			List<Schools> schoolList = new ArrayList<Schools>();
 			schoolList.add(schools);
-			
 			System.out.println("Now as CSV: ");
-
 			// initialize and configure the mapper
 			CsvMapper csvMapper = new CsvMapper();
 			// we ignore unknown fields or fields not specified in schema,
@@ -44,11 +42,6 @@ public class JsonToCSVFileConvertor {
 					.addColumn(CSVFileConstants.CSV_CITY).addColumn(CSVFileConstants.CSV_POSTAL_CODE)
 					.addColumn(CSVFileConstants.CSV_STATE_CODE).addColumn(CSVFileConstants.CSV_ACTIVE)
 					.addColumn(CSVFileConstants.CSV_COUNTRY_CODE).build().withHeader();
-			// schema= csvMapper.schemaFor(CSVTemplateData.class).withHeader();
-
-			// mapper.writerWithDefaultPrettyPrinter().writeValue(new File(path2
-			// + "/"+filename+".csv.json"), data);
-
 			// map the bean with our schema for the writer
 			ObjectWriter writer = csvMapper.writerFor(CSVTemplateData.class).with(schema);
 			// we write the list of objects
