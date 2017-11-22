@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @Configuration
-@ImportResource({"classpath:fileCopyApplicationContext.xml", "classpath:SftpOutboundTransferSample.xml"})
+@ImportResource({"classpath:ApplicationContext.xml", "classpath:SftpOutboundTransfer.xml"})
 public class SpringIntegrationApplication implements ApplicationRunner {
 
 	public static void main(String[] args) {

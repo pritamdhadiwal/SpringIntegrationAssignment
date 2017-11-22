@@ -2,6 +2,7 @@ package com.assignment.springintegration.file;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 
@@ -65,7 +66,9 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 
 	
 
-	
+	public void setHomeFolder(Path path) {
+        server.setFileSystemFactory(new VirtualFileSystemFactory(path));
+    }
 
 	@Override
 	public boolean isAutoStartup() {

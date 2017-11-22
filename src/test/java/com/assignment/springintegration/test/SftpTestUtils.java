@@ -1,4 +1,4 @@
-package com.assignment.springintegration.file;
+package com.assignment.springintegration.test;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
@@ -19,7 +19,7 @@ public class SftpTestUtils {
 			template.execute((SessionCallback<LsEntry, Void>) session -> {
 			
 				try {
-					session.mkdir("sftpSample");
+					session.mkdir("si.sftp.sample");
 				}
 				catch (Exception e) {
 					assertThat(e.getMessage(), containsString("failed to create"));

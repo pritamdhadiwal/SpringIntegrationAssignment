@@ -1,4 +1,4 @@
-package com.assignment.springintegration.file;
+package com.assignment.springintegration.test;
 
 import java.io.File;
 
@@ -14,16 +14,16 @@ import org.springframework.util.Assert;
 
 import com.jcraft.jsch.ChannelSftp.LsEntry;
 
-public class SftpOutboundTransferSample {
+public class SftpOutboundTransferTest {
 	@Test
 	public void testOutbound() throws Exception{
 
 		final String sourceFileName = "src/test/write/output.csv";
-		final String destinationFileName = sourceFileName +"_foo";
+		final String destinationFileName = sourceFileName ;
 
 		final ClassPathXmlApplicationContext ac =
-			new ClassPathXmlApplicationContext("/SftpOutboundTransferSample.xml",
-					SftpOutboundTransferSample.class);
+			new ClassPathXmlApplicationContext("/SftpOutboundTransfer.xml",
+					SftpOutboundTransferTest.class);
     	@SuppressWarnings("unchecked")
     	SessionFactory<LsEntry> sessionFactory = ac.getBean(CachingSessionFactory.class);
 		RemoteFileTemplate<LsEntry> template = new RemoteFileTemplate<LsEntry>(sessionFactory);

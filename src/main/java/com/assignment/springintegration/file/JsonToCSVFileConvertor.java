@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
-public class FileHandler {
+public class JsonToCSVFileConvertor {
 	
 	
     public File handleFile(File input) throws  IOException {
@@ -27,8 +27,7 @@ public class FileHandler {
 			List<CSVTemplateData> list = populateCsv(schools);
 			List<Schools> schoolList = new ArrayList<Schools>();
 			schoolList.add(schools);
-			String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(schoolList);
-//			System.out.println(json);
+			
 			System.out.println("Now as CSV: ");
 
 			// initialize and configure the mapper

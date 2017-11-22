@@ -8,7 +8,7 @@ public class SpringIntegrationFileCopy {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "fileCopyApplicationContext.xml");
+                "ApplicationContext.xml");
     }
     
 }

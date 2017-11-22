@@ -27,5 +27,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/promethean/Downloads/org.springframework.test-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
