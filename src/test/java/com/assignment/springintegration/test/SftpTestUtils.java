@@ -12,6 +12,7 @@ import org.springframework.integration.file.remote.SessionCallback;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
+
 public class SftpTestUtils {
 	public static <LsEntry> void createTestFiles(RemoteFileTemplate<LsEntry> template, final String... fileNames) {
 		if (template != null) {

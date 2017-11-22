@@ -19,23 +19,23 @@
 	 
     <import resource="SftpConfiguration.xml" />
 
-	<file:inbound-channel-adapter id="filesIn"
+	<file:inbound-channel-adapter id="jsonfilesIn"
 		directory="${json.dir}" filter="onlyJsonFiles" auto-startup="true">
 		<int:poller id="poller" fixed-delay="5000" />
 	</file:inbound-channel-adapter>
 
-	<int:service-activator input-channel="filesIn"
-		output-channel="filesOut" ref="transformer" method="handleFile" >
+	<int:service-activator input-channel="jsonfilesIn"
+		output-channel="csvfilesOut" ref="transformer" method="handleFile" >
 	</int:service-activator>	
 
-	<file:outbound-channel-adapter id="filesOut" directory="${csv.dir}" >
+	<file:outbound-channel-adapter id="csvfilesOut" directory="${csv.dir}" >
 	</file:outbound-channel-adapter>
 
 	<bean id="transformer" class="com.assignment.springintegration.file.JsonToCSVFileTransformer" />
 
 	<int-sftp:inbound-channel-adapter id="sftpInbondAdapter"
 				session-factory="sftpSessionFactory"
-				channel="filesOut" 
+				channel="csvfilesOut" 
 				filename-pattern="*.csv"
 				local-directory="${csv.dir}"
 				remote-directory="si.sftp.sample"
@@ -44,14 +44,14 @@
 	</int-sftp:inbound-channel-adapter>
 	
 	<int-sftp:outbound-gateway session-factory="sftpSessionFactory"
-                            request-channel="filesOut"
+                            request-channel="csvfilesOut"
                             command="put"
                             command-options="-stream"
                             remote-directory="si.sftp.sample"
                             reply-channel="sftpchannel" >
      </int-sftp:outbound-gateway>                       
                             
-    <int:channel id="filesOut"/>
+  
 	<int:channel id="sftpchannel"/>
 	<bean id="onlyJsonFiles"
 		class="org.springframework.integration.file.config.FileListFilterFactoryBean"

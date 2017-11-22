@@ -35,7 +35,7 @@
 
    </util:properties>
 
-	<bean class="com.assignment.springintegration.file.EmbeddedSftpServer">
+	<bean class="com.assignment.springintegration.sftp.EmbeddedSftpServer">
 		<property name="port" value="${sftp.port}"/>
 		<property name="defaultSftpSessionFactory" ref="defaultSftpSessionFactory"/>
 	</bean>

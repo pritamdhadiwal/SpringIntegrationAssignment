@@ -1,4 +1,4 @@
-package com.assignment.springintegration.file;
+package com.assignment.springintegration.sftp;
 
 import java.io.File;
 import java.io.IOException;
@@ -43,7 +43,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		this.server.setPort(0);
-	    this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
+		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
 		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
@@ -58,17 +58,15 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 			}
 
 		});
-		
+
 		final String pathname = System.getProperty("java.io.tmpdir") + File.separator + "sftptest" + File.separator;
 		new File(pathname).mkdirs();
 		server.setFileSystemFactory(new VirtualFileSystemFactory(Paths.get(pathname)));
 	}
 
-	
-
 	public void setHomeFolder(Path path) {
-        server.setFileSystemFactory(new VirtualFileSystemFactory(path));
-    }
+		server.setFileSystemFactory(new VirtualFileSystemFactory(path));
+	}
 
 	@Override
 	public boolean isAutoStartup() {
@@ -86,8 +84,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 			this.server.start();
 			this.defaultSftpSessionFactory.setPort(this.server.getPort());
 			this.running = true;
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			throw new IllegalStateException(e);
 		}
 	}
@@ -103,11 +100,9 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 		if (this.running) {
 			try {
 				server.stop(true);
-			}
-			catch (Exception e) {
+			} catch (Exception e) {
 				throw new IllegalStateException(e);
-			}
-			finally {
+			} finally {
 				this.running = false;
 			}
 		}

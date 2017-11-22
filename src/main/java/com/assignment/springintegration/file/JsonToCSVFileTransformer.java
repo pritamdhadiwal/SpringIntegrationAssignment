@@ -4,9 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import com.assignment.springintegration.constant.CSVFileConstants;
-import com.assignment.springintegration.pojo.CSVTemplateData;
+import com.assignment.springintegration.pojo.CSVFileData;
 import com.assignment.springintegration.pojo.SchoolData;
 import com.assignment.springintegration.pojo.Schools;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,26 +15,35 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
+@Configuration
 public class JsonToCSVFileTransformer {
 	
+	@Value("${csv.dir}")
+	private String csvFileDirectory;
 	
-    public File handleFile(File input) throws  IOException {
-    	 String homeDir = System.getProperty("home.dir");
-    	 File file = new File (homeDir, "output.csv");
+	
+	public String getCsvFileDirectory() {
+		return csvFileDirectory;
+	}
+
+	public void setCsvFileDirectory(String csvFileDirectory) {
+		this.csvFileDirectory = csvFileDirectory;
+	}
+
+	public File handleFile(File input) throws IOException {
+
+		final String sourceFileName = getCsvFileDirectory() + "/output.csv";
+		final File file = new File(sourceFileName);
 		try {
 			/* conversion */
 			ObjectMapper objectMapper = new ObjectMapper();
 			Schools schools = objectMapper.readValue(input, Schools.class);
-			List<CSVTemplateData> list = populateCsv(schools);
+			List<CSVFileData> list = populateCsv(schools);
 			List<Schools> schoolList = new ArrayList<Schools>();
 			schoolList.add(schools);
 			System.out.println("Now as CSV: ");
 			// initialize and configure the mapper
 			CsvMapper csvMapper = new CsvMapper();
-			// we ignore unknown fields or fields not specified in schema,
-			// otherwise
-			// writing will fail
-			// csvMapper.configure(JsonGenerator.Feature.IGNORE_UNKNOWN, true);
 			// initialize the schema
 			CsvSchema schema = CsvSchema.builder().setColumnSeparator('\t')
 					.addColumn(CSVFileConstants.CSV_SCHOOLCODE, CsvSchema.ColumnType.NUMBER)
@@ -43,33 +53,29 @@ public class JsonToCSVFileTransformer {
 					.addColumn(CSVFileConstants.CSV_STATE_CODE).addColumn(CSVFileConstants.CSV_ACTIVE)
 					.addColumn(CSVFileConstants.CSV_COUNTRY_CODE).build().withHeader();
 			// map the bean with our schema for the writer
-			ObjectWriter writer = csvMapper.writerFor(CSVTemplateData.class).with(schema);
+			ObjectWriter writer = csvMapper.writerFor(CSVFileData.class).with(schema);
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
 
-			//System.out.println(csvMapper.writer(schema).writeValueAsString(list));
+			// System.out.println(csvMapper.writer(schema).writeValueAsString(list));
 		} catch (Exception e) {
-			
 			e.printStackTrace();
-		} finally{
-			
+		} finally {
+
 		}
-	
-         return file;
-    }
-    
-    
-    
-    
-	private List<CSVTemplateData> populateCsv(Schools schools) {
-		List<CSVTemplateData> csvdata = new ArrayList<CSVTemplateData>();
+
+		return file;
+	}
+
+	private List<CSVFileData> populateCsv(Schools schools) {
+		List<CSVFileData> csvdata = new ArrayList<CSVFileData>();
 
 		for (SchoolData data : schools.getData()) {
-			CSVTemplateData csvTemplateData = new CSVTemplateData();
+			CSVFileData csvTemplateData = new CSVFileData();
 			csvTemplateData.setSchoolCode(data.getData().getSchool_number());
 			csvTemplateData.setSchoolName(data.getData().getName());
 			csvTemplateData.setAddress1(data.getData().getLocation().getAddress());
-			csvTemplateData.setAddress1(data.getData().getLocation().getAddress());
+			csvTemplateData.setAddress2(data.getData().getLocation().getAddress());
 			csvTemplateData.setAddress3(data.getData().getLocation().getAddress());
 			csvTemplateData.setCity(data.getData().getLocation().getCity());
 			csvTemplateData.setPostalCode(data.getData().getLocation().getZip());
@@ -80,6 +86,5 @@ public class JsonToCSVFileTransformer {
 		}
 		return csvdata;
 	}
-    
 
 }

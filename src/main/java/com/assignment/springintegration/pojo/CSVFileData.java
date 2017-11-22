@@ -1,6 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class CSVTemplateData {
+public class CSVFileData {
 
 	private String schoolCode;
 	private String schoolName;

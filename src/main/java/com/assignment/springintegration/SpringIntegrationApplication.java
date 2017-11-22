@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @Configuration
-@ImportResource({"classpath:ApplicationContext.xml"})
+@ImportResource({ "classpath:ApplicationContext.xml" })
 public class SpringIntegrationApplication implements ApplicationRunner {
 
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments arg0) throws InterruptedException, ExecutionException {
-		
+
 	}
 
 }
