@@ -46,7 +46,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
-		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
+		//this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setPasswordAuthenticator(new PasswordAuthenticator() {
 
 			public boolean authenticate(String username, String password, ServerSession session) {

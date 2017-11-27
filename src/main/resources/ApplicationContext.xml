@@ -38,16 +38,16 @@
 				channel="csvfilesOut" 
 				filename-pattern="*.csv"
 				local-directory="${csv.dir}"
-				remote-directory="si.sftp.sample"
+				remote-directory="${sftp.dir}"
                 delete-remote-files="false">
-			<int:poller fixed-rate="1000" />
+			<int:poller fixed-rate="5000" />
 	</int-sftp:inbound-channel-adapter>
 	
 	<int-sftp:outbound-gateway session-factory="sftpSessionFactory"
                             request-channel="csvfilesOut"
                             command="put"
                             command-options="-stream"
-                            remote-directory="si.sftp.sample"
+                            remote-directory="${sftp.dir}"
                             reply-channel="sftpchannel" >
      </int-sftp:outbound-gateway>                       
                             

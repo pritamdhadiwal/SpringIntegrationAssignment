@@ -17,18 +17,15 @@ import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
 @Configuration
 public class JsonToCSVFileTransformer {
-	
+
 	@Value("${csv.dir}")
 	private String csvFileDirectory;
-	
-	
+
 	public String getCsvFileDirectory() {
 		return csvFileDirectory;
 	}
 
-	public void setCsvFileDirectory(String csvFileDirectory) {
-		this.csvFileDirectory = csvFileDirectory;
-	}
+	
 
 	public File handleFile(File input) throws IOException {
 
@@ -38,9 +35,7 @@ public class JsonToCSVFileTransformer {
 			/* conversion */
 			ObjectMapper objectMapper = new ObjectMapper();
 			Schools schools = objectMapper.readValue(input, Schools.class);
-			List<CSVFileData> list = populateCsv(schools);
-			List<Schools> schoolList = new ArrayList<Schools>();
-			schoolList.add(schools);
+			List<CSVFileData> list = populateCsvFile(schools);
 			System.out.println("Now as CSV: ");
 			// initialize and configure the mapper
 			CsvMapper csvMapper = new CsvMapper();
@@ -57,7 +52,6 @@ public class JsonToCSVFileTransformer {
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
 
-			// System.out.println(csvMapper.writer(schema).writeValueAsString(list));
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -67,7 +61,7 @@ public class JsonToCSVFileTransformer {
 		return file;
 	}
 
-	private List<CSVFileData> populateCsv(Schools schools) {
+	private List<CSVFileData> populateCsvFile(Schools schools) {
 		List<CSVFileData> csvdata = new ArrayList<CSVFileData>();
 
 		for (SchoolData data : schools.getData()) {

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.util.Objects;
 
 import org.springframework.integration.file.remote.RemoteFileTemplate;
 import org.springframework.integration.file.remote.SessionCallback;
@@ -15,7 +16,7 @@ import com.jcraft.jsch.SftpException;
 
 public class SftpTestUtils {
 	public static <LsEntry> void createTestFiles(RemoteFileTemplate<LsEntry> template, final String... fileNames) {
-		if (template != null) {
+		if (Objects.nonNull(template)) {
 			final ByteArrayInputStream stream = new ByteArrayInputStream("foo".getBytes());
 			template.execute((SessionCallback<LsEntry, Void>) session -> {
 			
@@ -35,7 +36,7 @@ public class SftpTestUtils {
 	}
 
 	public static <LsEntry> void cleanUp(RemoteFileTemplate<LsEntry> template, final String... fileNames) {
-		if (template != null) {
+		if (Objects.nonNull(template)) {
 			template.execute((SessionCallback<LsEntry, Void>) session -> {
 				for (int i = 0; i < fileNames.length; i++) {
 					try {
@@ -52,13 +53,13 @@ public class SftpTestUtils {
 	}
 
 	public static <LsEntry> boolean fileExists(RemoteFileTemplate<LsEntry> template, final String... fileNames) {
-		if (template != null) {
+		if (Objects.nonNull(template)) {
 			return template.execute(session -> {
 				ChannelSftp channel = (ChannelSftp) session.getClientInstance();
 				for (int i = 0; i < fileNames.length; i++) {
 					try {
 						SftpATTRS stat = channel.stat("si.sftp.sample/" + fileNames[i]);
-						if (stat == null) {
+						if (Objects.nonNull(stat)) {
 							System.out.println("stat returned null for " + fileNames[i]);
 							return false;
 						}

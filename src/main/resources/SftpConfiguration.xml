@@ -11,7 +11,7 @@
 	   http://www.springframework.org/schema/util 
        http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<context:property-placeholder location="classpath:application.properties"/>
+	
 
 	<bean id="sftpSessionFactory" class="org.springframework.integration.file.remote.session.CachingSessionFactory">
 		<constructor-arg ref="defaultSftpSessionFactory" />
@@ -30,9 +30,7 @@
 	
 	
 	<util:properties id="sessionConfig">
-
-	<prop key="StrictHostKeyChecking">no</prop>
-
+		<prop key="StrictHostKeyChecking">no</prop>
    </util:properties>
 
 	<bean class="com.assignment.springintegration.sftp.EmbeddedSftpServer">
