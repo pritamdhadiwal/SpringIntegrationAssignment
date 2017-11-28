@@ -2,6 +2,7 @@ package com.assignment.springintegration.file;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -37,13 +38,21 @@ public class JsonToCSVFileTransformer {
 	private UploadGateway gateway;
 
 	@Autowired
-	private static EmbeddedSftpServer server;
+	 private static EmbeddedSftpServer server;
 	
 	private static Path sftpFolder;
 
 	@BeforeClass
 	public static void startServer() throws Exception {
-		
+		    server = new EmbeddedSftpServer();
+	        server.setPort(0);
+	        sftpFolder = Files.createTempDirectory("SFTPUPLOADTEST");
+	        server.afterPropertiesSet();
+	        server.setHomeFolder(sftpFolder);
+	        // Starting SFTP
+	        if (!server.isRunning()) {
+	            server.start();
+	        }
 	}
 
 	public void handleFile(File input) throws IOException {
