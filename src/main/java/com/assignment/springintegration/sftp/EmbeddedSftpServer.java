@@ -14,10 +14,15 @@ import org.apache.sshd.server.scp.ScpCommandFactory;
 import org.apache.sshd.server.session.ServerSession;
 import org.apache.sshd.server.subsystem.sftp.SftpSubsystemFactory;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.SmartLifecycle;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.integration.annotation.IntegrationComponentScan;
+import org.springframework.integration.config.EnableIntegration;
 import org.springframework.integration.sftp.session.DefaultSftpSessionFactory;
 
 
+@Configuration
 public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 	/**
 	 * Let OS to obtain the proper port
@@ -29,7 +34,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 	private volatile int port;
 
 	private volatile boolean running;
-
+    @Autowired
 	private DefaultSftpSessionFactory defaultSftpSessionFactory;
 
 	public void setPort(int port) {
@@ -46,9 +51,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
-		//this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setPasswordAuthenticator(new PasswordAuthenticator() {
-
 			public boolean authenticate(String username, String password, ServerSession session) {
 
 				// TODO Auto-generated method stub
@@ -82,7 +85,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 	public void start() {
 		try {
 			this.server.start();
-			this.defaultSftpSessionFactory.setPort(this.server.getPort());
+			this.defaultSftpSessionFactory.setPort(0);
 			this.running = true;
 		} catch (IOException e) {
 			throw new IllegalStateException(e);

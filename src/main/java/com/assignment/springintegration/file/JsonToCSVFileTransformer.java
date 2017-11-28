@@ -2,34 +2,53 @@ package com.assignment.springintegration.file;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
+import com.assignment.springintegration.SpringIntegrationApplication.UploadGateway;
 import com.assignment.springintegration.constant.CSVFileConstants;
 import com.assignment.springintegration.pojo.CSVFileData;
 import com.assignment.springintegration.pojo.SchoolData;
 import com.assignment.springintegration.pojo.Schools;
+import com.assignment.springintegration.sftp.EmbeddedSftpServer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+
 
 @Configuration
 public class JsonToCSVFileTransformer {
 
 	@Value("${csv.dir}")
 	private String csvFileDirectory;
+	
+	 
+    @Value("${json.dir}")
+    private String JsonFileDirectory;
 
-	public String getCsvFileDirectory() {
-		return csvFileDirectory;
+	@Autowired
+	private UploadGateway gateway;
+
+	@Autowired
+	private static EmbeddedSftpServer server;
+	
+	private static Path sftpFolder;
+
+	@BeforeClass
+	public static void startServer() throws Exception {
+		
 	}
 
-	
+	public void handleFile(File input) throws IOException {
 
-	public File handleFile(File input) throws IOException {
-
-		final String sourceFileName = getCsvFileDirectory() + "/output.csv";
+		final String sourceFileName = csvFileDirectory + "/output.csv";
 		final File file = new File(sourceFileName);
 		try {
 			/* conversion */
@@ -52,13 +71,15 @@ public class JsonToCSVFileTransformer {
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
 
+			/* to push file in SFTP location */
+			gateway.upload(file);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 
 		}
 
-		return file;
 	}
 
 	private List<CSVFileData> populateCsvFile(Schools schools) {
@@ -80,5 +101,12 @@ public class JsonToCSVFileTransformer {
 		}
 		return csvdata;
 	}
+	
+	 @AfterClass
+	    public static void stopServer() {
+	        if (server.isRunning()) {
+	            server.stop();
+	        }
+	    }
 
 }

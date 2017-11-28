@@ -44,7 +44,7 @@ public class SpringIntegrationApplicationTests {
 			final File file = new File(sourceFileName);
 
 			Assert.isTrue(file.exists(), String.format("File '%s' does not exist.", sourceFileName));
-			jsonToCSVFile.handleFile(file);
+		//	jsonToCSVFile.handleFile(file);
 			System.out.println(String.format("Successfully parsed '%s' file to a " + "to location under the name '%s'",
 					sourceFileName, ""));
 		} finally {

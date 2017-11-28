@@ -32,11 +32,9 @@ public class SftpOutboundTransferTest {
 	@Value("${csv.dir}")
 	private String csvFileDirectory;
   
-	public String getCsvFileDirectory() {
-		return csvFileDirectory;
-	}
+	
 
-	final String sourceFileName = getCsvFileDirectory() + "/output.csv";
+	final String sourceFileName = csvFileDirectory + "/output.csv";
 
 	@Test
 
