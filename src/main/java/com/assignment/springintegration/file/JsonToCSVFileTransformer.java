@@ -2,29 +2,25 @@ package com.assignment.springintegration.file;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
 import com.assignment.springintegration.SpringIntegrationApplication.UploadGateway;
 import com.assignment.springintegration.constant.CSVFileConstants;
 import com.assignment.springintegration.pojo.CSVFileData;
 import com.assignment.springintegration.pojo.SchoolData;
 import com.assignment.springintegration.pojo.Schools;
-import com.assignment.springintegration.sftp.EmbeddedSftpServer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 
 
-@Configuration
+@Component("jsonToCSVFileTransformer")
 public class JsonToCSVFileTransformer {
 
 	@Value("${csv.dir}")
@@ -33,27 +29,9 @@ public class JsonToCSVFileTransformer {
 	 
     @Value("${json.dir}")
     private String JsonFileDirectory;
-
-	@Autowired
-	private UploadGateway gateway;
-
-	@Autowired
-	 private static EmbeddedSftpServer server;
-	
-	private static Path sftpFolder;
-
-	@BeforeClass
-	public static void startServer() throws Exception {
-		    server = new EmbeddedSftpServer();
-	        server.setPort(0);
-	        sftpFolder = Files.createTempDirectory("SFTPUPLOADTEST");
-	        server.afterPropertiesSet();
-	        server.setHomeFolder(sftpFolder);
-	        // Starting SFTP
-	        if (!server.isRunning()) {
-	            server.start();
-	        }
-	}
+    
+    @Autowired
+    private UploadGateway gateway;
 
 	public void handleFile(File input) throws IOException {
 
@@ -79,9 +57,8 @@ public class JsonToCSVFileTransformer {
 			ObjectWriter writer = csvMapper.writerFor(CSVFileData.class).with(schema);
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
-
 			/* to push file in SFTP location */
-			gateway.upload(file);
+			//gateway.upload(file);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -111,11 +88,6 @@ public class JsonToCSVFileTransformer {
 		return csvdata;
 	}
 	
-	 @AfterClass
-	    public static void stopServer() {
-	        if (server.isRunning()) {
-	            server.stop();
-	        }
-	    }
+	
 
 }

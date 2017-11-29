@@ -27,39 +27,39 @@ import org.springframework.integration.sftp.outbound.SftpMessageHandler;
 import org.springframework.integration.sftp.session.DefaultSftpSessionFactory;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.MessageHandler;
 import com.assignment.springintegration.file.JsonToCSVFileTransformer;
+
+
 
 
 @SpringBootApplication
 @IntegrationComponentScan
 @EnableIntegration
 public class SpringIntegrationApplication implements ApplicationRunner {
-	
-	
+
 	@Value("${sftp.host}")
-    private String sftpHost;
+	private String sftpHost;
 
-    @Value("${sftp.port:0}")
-    private int sftpPort;
+	@Value("${sftp.port:0}")
+	private int sftpPort;
 
-    @Value("${sftp.username}")
-    private String sftpUser;
-    
-    @Value("${sftp.password}")
-    private String sftpPassword;
-    
-    @Value("${sftp.dir}")
-    private String sftpDirectory;
-    
-    @Value("${json.dir}")
-    private String JsonFileDirectory;
+	@Value("${sftp.username}")
+	private String sftpUser;
+
+	@Value("${sftp.password}")
+	private String sftpPassword;
+
+	@Value("${sftp.dir}")
+	private String sftpDirectory;
+
+	@Value("${json.dir}")
+	private String JsonFileDirectory;
 
 	private CompositeFileListFilter<File> filters;
-    
-    @Value("${sftp.dir:/}")
-    private String sftpRemoteDirectory;
-	    
+
+	@Value("${sftp.dir:/tmp/sftptest/}")
+	private String sftpRemoteDirectory;
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringIntegrationApplication.class, args);
 	}
@@ -68,77 +68,91 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 	public void run(ApplicationArguments arg0) throws InterruptedException, ExecutionException {
 
 	}
-	
-	
+
 	@Bean
 	public IntegrationFlow processFileFlow() {
-	    return IntegrationFlows
-	        .from("jsonfilesIn")
-	        .handle("jsonToCSVFileTransformer", "handleFile").get();
-	    }
+		return IntegrationFlows.from("jsonfilesIn").handle("jsonToCSVFileTransformer", "handleFile").get();
+	}
 
-	@InboundChannelAdapter(value = "jsonfilesIn", poller = @Poller(fixedDelay = "10000"))
+	@InboundChannelAdapter(value = "jsonfilesIn", poller = @Poller(fixedDelay = "5000"))
 	public File fileReadingMessageSource() {
-	    filters = new CompositeFileListFilter<>();
-	    filters.addFilter(new SimplePatternFileListFilter("*.json"));
-	    File source = new File(JsonFileDirectory+"/school.json");
-	    return source;
-	} 
-	
+		filters = new CompositeFileListFilter<>();
+		filters.addFilter(new SimplePatternFileListFilter("*.json"));
+		File source = new File(JsonFileDirectory + "/school.json");
+		return source;
+	}
+
 	@Bean
 	public JsonToCSVFileTransformer jsonToCSVFileTransformer() {
 		return new JsonToCSVFileTransformer();
 	}
-	
+
 	@Bean
 	public MessageChannel jsonfilesIn() {
-        return new DirectChannel();
+		return new DirectChannel();
 	}
-	
+
 	@Bean
 	public DefaultSftpSessionFactory sftpSessionFactory() {
-	     	DefaultSftpSessionFactory factory = new DefaultSftpSessionFactory();
-		    Properties prop = new Properties();
-		    prop.put("poolSize", "50");
-		    prop.put("sessionWaitTimeout", "5000");
-		    prop.put("StrictHostKeyChecking", "no");
-		    factory.setHost(sftpHost);
-	        factory.setPort(sftpPort);
-	        factory.setUser(sftpUser);
-	        factory.setPassword(sftpPassword);
-	        factory.setSessionConfig(prop);
-	        factory.setAllowUnknownKeys(true);
-	        return factory;	    
-	    }
-	 
-	 
-	 @Bean
-	    @ServiceActivator(inputChannel = "toSftpChannel")
-	    public MessageHandler handler() {
-	        SftpMessageHandler handler = new SftpMessageHandler(sftpSessionFactory());
-	        handler.setRemoteDirectoryExpression(new LiteralExpression(sftpRemoteDirectory));
-	        handler.setFileNameGenerator(new FileNameGenerator() {
+		DefaultSftpSessionFactory factory = new DefaultSftpSessionFactory();
+		Properties prop = new Properties();
+		prop.put("poolSize", "50");
+		prop.put("sessionWaitTimeout", "5000");
+		prop.put("StrictHostKeyChecking", "no");
+		factory.setHost("localhost");
+		factory.setPort(0);
+		factory.setUser("user");
+		factory.setPassword("password");
+		factory.setSessionConfig(prop);
+		factory.setAllowUnknownKeys(true);
+		return factory;
+	}
 
-	            @Override
-	            public String generateFileName(Message<?> message) {
-	                if (message.getPayload() instanceof File) {
-	                    return ((File) message.getPayload()).getName();
-	                } else {
-	                    throw new IllegalArgumentException("File expected as payload.");
-	                }
-	            }
+	/*
+	 * @Bean public IntegrationFlow sftpPutFlow() {
+	 * System.out.println("In sftpPutFlow flow:::::::::::"); return
+	 * IntegrationFlows.from("sftpPutInputChannel") .handleWithAdapter(h ->
+	 * h.sftpGateway(sftpSessionFactory(),
+	 * AbstractRemoteFileOutboundGateway.Command.PUT, "payload")
+	 * .options(AbstractRemoteFileOutboundGateway.Option.RECURSIVE)
+	 * .regexFileNameFilter("(subSftpSource|.*.csv)") .localDirectory(new
+	 * File("/home/promethean/Pritam/SpringAssignment/src/test/write/output.csv"
+	 * ))
+	 * .localFilenameExpression("#remoteFileName.replaceFirst('sftpSource', 'localTarget')"
+	 * )) .channel("jsonfilesIn") .get(); }
+	 */
 
-	        });
-	        return handler;
-	    }
+	@Bean
+	@ServiceActivator(inputChannel = "toSftpChannel")
+	public SftpMessageHandler handler() {
+		SftpMessageHandler handler = new SftpMessageHandler(sftpSessionFactory());
+		handler.setRemoteDirectoryExpression(new LiteralExpression(sftpRemoteDirectory));
+		handler.setFileNameGenerator(new FileNameGenerator() {
 
+			@Override
+			public String generateFileName(Message<?> message) {
+				if (message.getPayload() instanceof File) {
+					return ((File) message.getPayload()).getName();
+				} else {
+					throw new IllegalArgumentException("File expected as payload.");
+				}
+			}
 
-	 @MessagingGateway
-	    public interface UploadGateway {
+		});
+		return handler;
+	}
 
-	        @Gateway(requestChannel = "toSftpChannel")
-	        void upload(File file);
+	@MessagingGateway
+	public interface UploadGateway {
 
-	    }  
- 
+		@Gateway(requestChannel = "toSftpChannel")
+		void upload(File file);
+
+	}
+
+	@Bean
+	public MessageChannel toSftpChannel() {
+		return new DirectChannel();
+	}
+
 }
