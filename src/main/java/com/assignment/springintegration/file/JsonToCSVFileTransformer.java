@@ -4,11 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
 import com.assignment.springintegration.SpringIntegrationApplication.UploadGateway;
 import com.assignment.springintegration.constant.CSVFileConstants;
 import com.assignment.springintegration.pojo.CSVFileData;
@@ -25,13 +23,11 @@ public class JsonToCSVFileTransformer {
 
 	@Value("${csv.dir}")
 	private String csvFileDirectory;
+
+	@Value("${json.dir}")
+	private String JsonFileDirectory;
+
 	
-	 
-    @Value("${json.dir}")
-    private String JsonFileDirectory;
-    
-    @Autowired
-    private UploadGateway gateway;
 
 	public void handleFile(File input) throws IOException {
 
@@ -41,7 +37,7 @@ public class JsonToCSVFileTransformer {
 			/* conversion */
 			ObjectMapper objectMapper = new ObjectMapper();
 			Schools schools = objectMapper.readValue(input, Schools.class);
-			List<CSVFileData> list = populateCsvFile(schools);
+			List<CSVFileData> list = buildCsvFile(schools);
 			System.out.println("Now as CSV: ");
 			// initialize and configure the mapper
 			CsvMapper csvMapper = new CsvMapper();
@@ -65,29 +61,19 @@ public class JsonToCSVFileTransformer {
 		} finally {
 
 		}
-
 	}
 
-	private List<CSVFileData> populateCsvFile(Schools schools) {
+	private List<CSVFileData> buildCsvFile(Schools schools) {
 		List<CSVFileData> csvdata = new ArrayList<CSVFileData>();
-
 		for (SchoolData data : schools.getData()) {
-			CSVFileData csvTemplateData = new CSVFileData();
-			csvTemplateData.setSchoolCode(data.getData().getSchool_number());
-			csvTemplateData.setSchoolName(data.getData().getName());
-			csvTemplateData.setAddress1(data.getData().getLocation().getAddress());
-			csvTemplateData.setAddress2(data.getData().getLocation().getAddress());
-			csvTemplateData.setAddress3(data.getData().getLocation().getAddress());
-			csvTemplateData.setCity(data.getData().getLocation().getCity());
-			csvTemplateData.setPostalCode(data.getData().getLocation().getZip());
-			csvTemplateData.setStateCode(data.getData().getLocation().getState());
-			csvTemplateData.setActive("Y");
-			csvTemplateData.setCountryCode("US");
-			csvdata.add(csvTemplateData);
+			CSVFileData csvfileData = new CSVFileData.CSVFileDataBuilder(data.getData().getSchool_number(),
+					data.getData().getName(), data.getData().getLocation().getAddress(),
+					data.getData().getLocation().getAddress(), data.getData().getLocation().getAddress(),
+					data.getData().getLocation().getCity(), data.getData().getLocation().getZip(),
+					data.getData().getLocation().getState()).setActive("Y").setCountry_code("US").build();
+			csvdata.add(csvfileData);
 		}
 		return csvdata;
 	}
-	
-	
 
 }

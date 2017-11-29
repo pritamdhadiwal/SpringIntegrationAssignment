@@ -1,7 +1,12 @@
 package com.assignment.springintegration.pojo;
 
-public class Location {
-	
+public class Location implements java.io.Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private String zip;
 
 	private String address;
@@ -46,4 +51,5 @@ public class Location {
 	public String toString() {
 		return "ClassPojo [zip = " + zip + ", address = " + address + ", state = " + state + ", city = " + city + "]";
 	}
+
 }

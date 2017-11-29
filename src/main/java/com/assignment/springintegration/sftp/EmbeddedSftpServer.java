@@ -4,11 +4,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.PublicKey;
 import java.util.Collections;
-
 import org.apache.sshd.common.file.virtualfs.VirtualFileSystemFactory;
 import org.apache.sshd.server.SshServer;
 import org.apache.sshd.server.auth.password.PasswordAuthenticator;
+import org.apache.sshd.server.auth.pubkey.PublickeyAuthenticator;
 import org.apache.sshd.server.keyprovider.SimpleGeneratorHostKeyProvider;
 import org.apache.sshd.server.scp.ScpCommandFactory;
 import org.apache.sshd.server.session.ServerSession;
@@ -32,8 +33,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 
     private volatile boolean running;
     
-    @Autowired
-    private DefaultSftpSessionFactory defaultSftpSessionFactory;
+    
 
     public void setPort(int port) {
         this.port = port;
@@ -44,13 +44,17 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
     	this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
+		this.server.setPublickeyAuthenticator(new PublickeyAuthenticator() {
+            public boolean authenticate(String username, PublicKey key, ServerSession session) {
+                //File f = new File("/Users/" + username + "/.ssh/authorized_keys");
+                return true;
+            }
+        });
+		
 		this.server.setPasswordAuthenticator(new PasswordAuthenticator() {
 			public boolean authenticate(String username, String password, ServerSession session) {
 
-				// TODO Auto-generated method stub
-
 				return true;
-
 			}
 
 		});
@@ -81,7 +85,7 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
     public void start() {
         try {
         	this.server.start();
-        	this.defaultSftpSessionFactory.setPort(0);
+        	this.server.setPort(0);
             this.running  = true;
         }
         catch (IOException e) {

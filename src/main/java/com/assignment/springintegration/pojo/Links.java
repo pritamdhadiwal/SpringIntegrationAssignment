@@ -2,7 +2,12 @@ package com.assignment.springintegration.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Links {
+public class Links implements java.io.Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@JsonProperty("rel")
 	private String rel;

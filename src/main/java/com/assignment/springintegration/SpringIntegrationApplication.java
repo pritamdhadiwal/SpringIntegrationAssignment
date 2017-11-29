@@ -8,6 +8,8 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.expression.common.LiteralExpression;
 import org.springframework.integration.annotation.Gateway;
@@ -30,8 +32,6 @@ import org.springframework.messaging.MessageChannel;
 import com.assignment.springintegration.file.JsonToCSVFileTransformer;
 
 
-
-
 @SpringBootApplication
 @IntegrationComponentScan
 @EnableIntegration
@@ -49,9 +49,6 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 	@Value("${sftp.password}")
 	private String sftpPassword;
 
-	@Value("${sftp.dir}")
-	private String sftpDirectory;
-
 	@Value("${json.dir}")
 	private String JsonFileDirectory;
 
@@ -61,7 +58,13 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 	private String sftpRemoteDirectory;
 
 	public static void main(String[] args) {
+		 ConfigurableApplicationContext context =
+                 new SpringApplicationBuilder(SpringIntegrationApplication.class)
+                     .web(false)
+                     .run(args);
 		SpringApplication.run(SpringIntegrationApplication.class, args);
+		UploadGateway gateway = context.getBean(UploadGateway.class);
+        gateway.upload(new File("/home/promethean/Pritam/SpringAssignment/src/test/write/output.csv"));
 	}
 
 	@Override
@@ -99,18 +102,20 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 		prop.put("poolSize", "50");
 		prop.put("sessionWaitTimeout", "5000");
 		prop.put("StrictHostKeyChecking", "no");
-		factory.setHost("localhost");
+		prop.put("PreferredAuthentications", "password");
+		factory.setHost("172.26.43.29");
 		factory.setPort(0);
-		factory.setUser("user");
-		factory.setPassword("password");
+		factory.setUser("admin");
+		factory.setPassword("P@ssword");
 		factory.setSessionConfig(prop);
 		factory.setAllowUnknownKeys(true);
 		return factory;
 	}
 
 	/*
-	 * @Bean public IntegrationFlow sftpPutFlow() {
-	 * System.out.println("In sftpPutFlow flow:::::::::::"); return
+	 * @Bean 
+	 * public IntegrationFlow sftpPutFlow() {
+	 * System.out.println("In sftpPutFlow flowtrue:::::::::::"); return
 	 * IntegrationFlows.from("sftpPutInputChannel") .handleWithAdapter(h ->
 	 * h.sftpGateway(sftpSessionFactory(),
 	 * AbstractRemoteFileOutboundGateway.Command.PUT, "payload")
@@ -147,7 +152,6 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 
 		@Gateway(requestChannel = "toSftpChannel")
 		void upload(File file);
-
 	}
 
 	@Bean

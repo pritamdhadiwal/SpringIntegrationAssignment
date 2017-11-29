@@ -1,6 +1,11 @@
 package com.assignment.springintegration.pojo;
 
-public class Paging {
+public class Paging implements java.io.Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private String total;
 
