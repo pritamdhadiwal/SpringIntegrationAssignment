@@ -1,6 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class Data implements java.io.Serializable{
+public class Data implements java.io.Serializable {
 
 	/**
 	 * 
@@ -34,8 +34,6 @@ public class Data implements java.io.Serializable{
 	private String low_grade;
 
 	private String district;
-
-	
 
 	public String getSchool_number() {
 		return school_number;
@@ -157,8 +155,5 @@ public class Data implements java.io.Serializable{
 				+ ", sis_id = " + sis_id + ", name = " + name + ", low_grade = " + low_grade + ", district = "
 				+ district + "]";
 	}
-	
-	
-	
-	
+
 }

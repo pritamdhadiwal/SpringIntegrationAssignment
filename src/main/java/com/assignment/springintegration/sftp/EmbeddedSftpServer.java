@@ -4,20 +4,16 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.security.PublicKey;
 import java.util.Collections;
 import org.apache.sshd.common.file.virtualfs.VirtualFileSystemFactory;
 import org.apache.sshd.server.SshServer;
 import org.apache.sshd.server.auth.password.PasswordAuthenticator;
-import org.apache.sshd.server.auth.pubkey.PublickeyAuthenticator;
 import org.apache.sshd.server.keyprovider.SimpleGeneratorHostKeyProvider;
 import org.apache.sshd.server.scp.ScpCommandFactory;
 import org.apache.sshd.server.session.ServerSession;
 import org.apache.sshd.server.subsystem.sftp.SftpSubsystemFactory;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.SmartLifecycle;
-import org.springframework.integration.sftp.session.DefaultSftpSessionFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.util.SocketUtils;
 
@@ -25,35 +21,25 @@ import org.springframework.util.SocketUtils;
 @Component("embeddedSftpServer")
 public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 
-    public static final int PORT = SocketUtils.findAvailableTcpPort();
+	public static final int PORT = SocketUtils.findAvailableTcpPort();
 
-    private final SshServer server = SshServer.setUpDefaultServer();
+	private final SshServer server = SshServer.setUpDefaultServer();
 
-    private volatile int port;
+	private volatile int port;
 
-    private volatile boolean running;
-    
-    
+	private volatile boolean running;
 
-    public void setPort(int port) {
-        this.port = port;
-    }
+	public void setPort(int port) {
+		this.port = port;
+	}
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-    	this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		this.server.setKeyPairProvider(new SimpleGeneratorHostKeyProvider());
 		this.server.setSubsystemFactories(Collections.singletonList(new SftpSubsystemFactory()));
 		this.server.setCommandFactory(new ScpCommandFactory());
-		this.server.setPublickeyAuthenticator(new PublickeyAuthenticator() {
-            public boolean authenticate(String username, PublicKey key, ServerSession session) {
-                //File f = new File("/Users/" + username + "/.ssh/authorized_keys");
-                return true;
-            }
-        });
-		
 		this.server.setPasswordAuthenticator(new PasswordAuthenticator() {
 			public boolean authenticate(String username, String password, ServerSession session) {
-
 				return true;
 			}
 
@@ -63,65 +49,59 @@ public class EmbeddedSftpServer implements InitializingBean, SmartLifecycle {
 		new File(pathname).mkdirs();
 		server.setFileSystemFactory(new VirtualFileSystemFactory(Paths.get(pathname)));
 		this.start();
-    }
+	}
 
-    public void setHomeFolder(Path path) {
-        server.setFileSystemFactory(new VirtualFileSystemFactory(path));
-    }
+	public void setHomeFolder(Path path) {
+		server.setFileSystemFactory(new VirtualFileSystemFactory(path));
+	}
 
+	@Override
+	public boolean isAutoStartup() {
+		return PORT == this.port;
+	}
 
-   
-    @Override
-    public boolean isAutoStartup() {
-        return PORT == this.port;
-    }
+	@Override
+	public int getPhase() {
+		return Integer.MAX_VALUE;
+	}
 
-    @Override
-    public int getPhase() {
-        return Integer.MAX_VALUE;
-    }
+	@Override
+	public void start() {
+		try {
+			this.server.start();
+			this.server.setPort(0);
+			this.running = true;
+		} catch (IOException e) {
+			throw new IllegalStateException(e);
+		}
+	}
 
-    @Override
-    public void start() {
-        try {
-        	this.server.start();
-        	this.server.setPort(0);
-            this.running  = true;
-        }
-        catch (IOException e) {
-            throw new IllegalStateException(e);
-        }
-    }
+	@Override
+	public void stop(Runnable callback) {
+		stop();
+		callback.run();
+	}
 
-    @Override
-    public void stop(Runnable callback) {
-        stop();
-        callback.run();
-    }
+	@Override
+	public void stop() {
+		if (this.running) {
+			try {
+				server.stop(false);
+			} catch (IOException e) {
+				throw new IllegalStateException(e);
+			} finally {
+				this.running = false;
+			}
+		}
+	}
 
-    @Override
-    public void stop() {
-        if (this.running) {
-            try {
-                server.stop(false);
-            }
-            catch (IOException e) {
-                throw new IllegalStateException(e);
-            }
-            finally {
-                this.running = false;
-            }
-        }
-    }
+	@Override
+	public boolean isRunning() {
+		return this.running;
+	}
 
-    @Override
-    public boolean isRunning() {
-        return this.running;
-    }
+	public SshServer getServer() {
+		return server;
+	}
 
-    public SshServer getServer() {
-        return server;
-    }
-   
-    
 }

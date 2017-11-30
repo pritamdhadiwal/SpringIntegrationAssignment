@@ -24,15 +24,12 @@ import com.jcraft.jsch.ChannelSftp.LsEntry;
 @ContextConfiguration(locations={"/ApplicationContext.xml"})
 @Configuration
 public class SftpOutboundTransferTest {
-	
-	
+
 	@Autowired
 	private ApplicationContext context;
-	
+
 	@Value("${csv.dir}")
 	private String csvFileDirectory;
-  
-	
 
 	final String sourceFileName = csvFileDirectory + "/output.csv";
 

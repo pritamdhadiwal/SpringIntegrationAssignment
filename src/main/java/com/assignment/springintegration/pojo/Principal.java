@@ -1,6 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class Principal implements java.io.Serializable{
+public class Principal implements java.io.Serializable {
 
 	/**
 	 * 

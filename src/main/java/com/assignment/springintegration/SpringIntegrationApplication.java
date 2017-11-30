@@ -3,14 +3,14 @@ package com.assignment.springintegration;
 import java.io.File;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.expression.common.LiteralExpression;
 import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.InboundChannelAdapter;
@@ -31,7 +31,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import com.assignment.springintegration.file.JsonToCSVFileTransformer;
 
-
+@PropertySource("classpath:configprops.properties")
 @SpringBootApplication
 @IntegrationComponentScan
 @EnableIntegration
@@ -54,17 +54,15 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 
 	private CompositeFileListFilter<File> filters;
 
-	@Value("${sftp.dir:/tmp/sftptest/}")
+	@Value("${sftp.dir:/}")
 	private String sftpRemoteDirectory;
+	
+	@Autowired
+	private JsonToCSVFileTransformer jsonToCSVFileTransformer;
 
 	public static void main(String[] args) {
-		 ConfigurableApplicationContext context =
-                 new SpringApplicationBuilder(SpringIntegrationApplication.class)
-                     .web(false)
-                     .run(args);
+		 
 		SpringApplication.run(SpringIntegrationApplication.class, args);
-		UploadGateway gateway = context.getBean(UploadGateway.class);
-        gateway.upload(new File("/home/promethean/Pritam/SpringAssignment/src/test/write/output.csv"));
 	}
 
 	@Override
@@ -86,11 +84,6 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 	}
 
 	@Bean
-	public JsonToCSVFileTransformer jsonToCSVFileTransformer() {
-		return new JsonToCSVFileTransformer();
-	}
-
-	@Bean
 	public MessageChannel jsonfilesIn() {
 		return new DirectChannel();
 	}
@@ -103,30 +96,15 @@ public class SpringIntegrationApplication implements ApplicationRunner {
 		prop.put("sessionWaitTimeout", "5000");
 		prop.put("StrictHostKeyChecking", "no");
 		prop.put("PreferredAuthentications", "password");
-		factory.setHost("172.26.43.29");
+		factory.setHost("127.0.0.1");
 		factory.setPort(0);
-		factory.setUser("admin");
-		factory.setPassword("P@ssword");
+		factory.setUser("pritam");
+		factory.setPassword("pritam");
 		factory.setSessionConfig(prop);
 		factory.setAllowUnknownKeys(true);
 		return factory;
 	}
-
-	/*
-	 * @Bean 
-	 * public IntegrationFlow sftpPutFlow() {
-	 * System.out.println("In sftpPutFlow flowtrue:::::::::::"); return
-	 * IntegrationFlows.from("sftpPutInputChannel") .handleWithAdapter(h ->
-	 * h.sftpGateway(sftpSessionFactory(),
-	 * AbstractRemoteFileOutboundGateway.Command.PUT, "payload")
-	 * .options(AbstractRemoteFileOutboundGateway.Option.RECURSIVE)
-	 * .regexFileNameFilter("(subSftpSource|.*.csv)") .localDirectory(new
-	 * File("/home/promethean/Pritam/SpringAssignment/src/test/write/output.csv"
-	 * ))
-	 * .localFilenameExpression("#remoteFileName.replaceFirst('sftpSource', 'localTarget')"
-	 * )) .channel("jsonfilesIn") .get(); }
-	 */
-
+	
 	@Bean
 	@ServiceActivator(inputChannel = "toSftpChannel")
 	public SftpMessageHandler handler() {

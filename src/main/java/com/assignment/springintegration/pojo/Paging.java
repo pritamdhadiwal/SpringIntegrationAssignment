@@ -1,6 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class Paging implements java.io.Serializable{
+public class Paging implements java.io.Serializable {
 
 	/**
 	 * 

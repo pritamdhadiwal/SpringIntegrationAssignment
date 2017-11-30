@@ -2,7 +2,7 @@ package com.assignment.springintegration.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Links implements java.io.Serializable{
+public class Links implements java.io.Serializable {
 
 	/**
 	 * 

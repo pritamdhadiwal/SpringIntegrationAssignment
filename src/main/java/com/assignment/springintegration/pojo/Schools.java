@@ -2,7 +2,7 @@ package com.assignment.springintegration.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Schools implements java.io.Serializable{
+public class Schools implements java.io.Serializable {
 
 	/**
 	 * 

@@ -1,6 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class CSVFileData implements java.io.Serializable{
+public class CSVFileData implements java.io.Serializable {
 
 	/**
 	 * 

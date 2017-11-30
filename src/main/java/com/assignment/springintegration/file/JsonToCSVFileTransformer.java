@@ -26,9 +26,12 @@ public class JsonToCSVFileTransformer {
 
 	@Value("${json.dir}")
 	private String JsonFileDirectory;
-
 	
-
+	@Autowired
+    private UploadGateway gateway;
+ 
+	
+    
 	public void handleFile(File input) throws IOException {
 
 		final String sourceFileName = csvFileDirectory + "/output.csv";
@@ -54,7 +57,7 @@ public class JsonToCSVFileTransformer {
 			// we write the list of objects
 			writer.writeValues(file).writeAll(list);
 			/* to push file in SFTP location */
-			//gateway.upload(file);
+			gateway.upload(file);
 
 		} catch (Exception e) {
 			e.printStackTrace();
