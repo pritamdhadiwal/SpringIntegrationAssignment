@@ -14,8 +14,10 @@ import com.assignment.springintegration.pojo.SchoolData;
 import com.assignment.springintegration.pojo.Schools;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+
 
 
 @Component("jsonToCSVFileTransformer")
@@ -26,12 +28,10 @@ public class JsonToCSVFileTransformer {
 
 	@Value("${json.dir}")
 	private String JsonFileDirectory;
-	
+
 	@Autowired
-    private UploadGateway gateway;
- 
-	
-    
+	private UploadGateway gateway;
+
 	public void handleFile(File input) throws IOException {
 
 		final String sourceFileName = csvFileDirectory + "/output.csv";
@@ -39,11 +39,13 @@ public class JsonToCSVFileTransformer {
 		try {
 			/* conversion */
 			ObjectMapper objectMapper = new ObjectMapper();
+			objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
 			Schools schools = objectMapper.readValue(input, Schools.class);
 			List<CSVFileData> list = buildCsvFile(schools);
 			System.out.println("Now as CSV: ");
 			// initialize and configure the mapper
 			CsvMapper csvMapper = new CsvMapper();
+			csvMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
 			// initialize the schema
 			CsvSchema schema = CsvSchema.builder().setColumnSeparator('\t')
 					.addColumn(CSVFileConstants.CSV_SCHOOLCODE, CsvSchema.ColumnType.NUMBER)
@@ -69,12 +71,17 @@ public class JsonToCSVFileTransformer {
 	private List<CSVFileData> buildCsvFile(Schools schools) {
 		List<CSVFileData> csvdata = new ArrayList<CSVFileData>();
 		for (SchoolData data : schools.getData()) {
-			CSVFileData csvfileData = new CSVFileData.CSVFileDataBuilder(data.getData().getSchool_number(),
-					data.getData().getName(), data.getData().getLocation().getAddress(),
-					data.getData().getLocation().getAddress(), data.getData().getLocation().getAddress(),
-					data.getData().getLocation().getCity(), data.getData().getLocation().getZip(),
-					data.getData().getLocation().getState()).setActive("Y").setCountry_code("US").build();
+			CSVFileData csvfileData = CSVFileData.builder()
+					.setSchoolCode(data.getData().getSchool_number())
+					.setSchoolName(data.getData().getName())
+					.setAddress1(data.getData().getLocation().getAddress())
+					.setAddress2(data.getData().getLocation().getAddress())
+					.setAddress3(data.getData().getLocation().getAddress())
+					.setCity(data.getData().getLocation().getCity())
+					.setPostalCode(data.getData().getLocation().getZip())
+					.setStateCode(data.getData().getLocation().getState()).build();
 			csvdata.add(csvfileData);
+
 		}
 		return csvdata;
 	}

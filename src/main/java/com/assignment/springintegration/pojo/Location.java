@@ -1,11 +1,6 @@
 package com.assignment.springintegration.pojo;
 
-public class Location implements java.io.Serializable {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Location  {
 
 	private String zip;
 

@@ -2,13 +2,8 @@ package com.assignment.springintegration.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Schools implements java.io.Serializable {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
+public class Schools  {
+	
 	@JsonProperty("data")
 	private SchoolData[] data;
 

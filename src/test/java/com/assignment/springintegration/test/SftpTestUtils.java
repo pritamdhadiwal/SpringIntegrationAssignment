@@ -2,7 +2,6 @@ package com.assignment.springintegration.test;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.Objects;

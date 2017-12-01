@@ -1,7 +1,6 @@
 package com.assignment.springintegration.constant;
 
 public class CSVFileConstants {
-
 	public static final String CSV_SCHOOLCODE = "schoolCode";
 	public static final String CSV_SCHOOLNAME = "schoolName";
 	public static final String CSV_ADDRESS1 = "address1";
@@ -12,5 +11,4 @@ public class CSVFileConstants {
 	public static final String CSV_STATE_CODE = "stateCode";
 	public static final String CSV_ACTIVE = "active";
 	public static final String CSV_COUNTRY_CODE = "countryCode";
-
 }

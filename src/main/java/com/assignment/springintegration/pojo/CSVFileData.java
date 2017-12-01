@@ -1,11 +1,15 @@
 package com.assignment.springintegration.pojo;
 
-public class CSVFileData implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class CSVFileData {
+
+	private CSVFileData() {
+	}
+
+	public static CSVFileDataBuilder builder() {
+		return new CSVFileDataBuilder();
+	}
+
 	private String schoolCode;
 	private String schoolName;
 	private String address1;
@@ -17,17 +21,6 @@ public class CSVFileData implements java.io.Serializable {
 	private String active;
 	private String countryCode;
 
-	public CSVFileData(CSVFileDataBuilder csvFileDataBuilder) {
-		this.schoolCode = csvFileDataBuilder.SCHOOLCODE;
-		this.schoolName = csvFileDataBuilder.SCHOOLNAME;
-		this.address1 = csvFileDataBuilder.ADDRESS1;
-		this.address2 = csvFileDataBuilder.ADDRESS2;
-		this.address3 = csvFileDataBuilder.ADDRESS3;
-		this.city = csvFileDataBuilder.CITY;
-		this.postalCode = csvFileDataBuilder.POSTAL_CODE;
-		this.stateCode = csvFileDataBuilder.STATE_CODE;
-	}
-
 	public String getSchoolCode() {
 		return schoolCode;
 	}
@@ -37,6 +30,7 @@ public class CSVFileData implements java.io.Serializable {
 	}
 
 	public String getSchoolName() {
+
 		return schoolName;
 	}
 
@@ -108,46 +102,80 @@ public class CSVFileData implements java.io.Serializable {
 		this.countryCode = countryCode;
 	}
 
-	// Builder Class
 	public static class CSVFileDataBuilder {
-		// required parameters
-		private String SCHOOLCODE;
-		private String SCHOOLNAME;
-		private String ADDRESS1;
-		private String ADDRESS2;
-		private String ADDRESS3;
-		private String CITY;
-		private String POSTAL_CODE;
-		private String STATE_CODE;
+
+		private String schoolCode;
+		private String schoolName;
+		private String address1;
+		private String address2;
+		private String address3;
+		private String city;
+		private String postalCode;
+		private String stateCode;
 
 		// optional parameters
 		private String active;
-		private String country_code;
+		private String countrycode;
+		private CSVFileData csvFileData;
 
-		public CSVFileDataBuilder setActive(String active) {
-			this.active = "Y";
-			return this;
-		}
-
-		public CSVFileDataBuilder setCountry_code(String country_code) {
-			this.country_code = "US";
-			return this;
-		}
-
-		public CSVFileDataBuilder(String schoolCode, String schoolName, String address1, String address2,
-				String address3, String city, String postalCode, String stateCode) {
-			this.SCHOOLCODE = schoolCode;
-			this.SCHOOLNAME = schoolName;
-			this.ADDRESS1 = address1;
-			this.ADDRESS2 = address2;
-			this.ADDRESS3 = address3;
-			this.CITY = city;
-			this.POSTAL_CODE = postalCode;
-			this.STATE_CODE = stateCode;
+		public CSVFileDataBuilder() {
+			csvFileData = new CSVFileData();
 		}
 
 		public CSVFileData build() {
-			return new CSVFileData(this);
+			return csvFileData;
 		}
+
+		public CSVFileDataBuilder setSchoolCode(final String schoolCode) {
+			csvFileData.setSchoolCode(schoolCode);
+			return this;
+		}
+
+		public CSVFileDataBuilder setSchoolName(final String schoolName) {
+			csvFileData.setSchoolName(schoolName);
+			return this;
+		}
+
+		public CSVFileDataBuilder setAddress1(final String address1) {
+			csvFileData.setAddress1(address1);
+			return this;
+		}
+
+		public CSVFileDataBuilder setAddress2(final String address2) {
+			csvFileData.setAddress1(address2);
+			return this;
+		}
+
+		public CSVFileDataBuilder setAddress3(final String address3) {
+			csvFileData.setAddress1(address3);
+			return this;
+		}
+
+		public CSVFileDataBuilder setPostalCode(final String postalCode) {
+			csvFileData.setPostalCode(postalCode);
+			return this;
+		}
+
+		public CSVFileDataBuilder setCity(final String city) {
+			csvFileData.setCity(city);
+			return this;
+		}
+
+		public CSVFileDataBuilder setStateCode(final String stateCode) {
+			csvFileData.setStateCode(stateCode);
+			return this;
+		}
+
+		public CSVFileDataBuilder setActive(final String active) {
+			csvFileData.setActive(active);
+			return this;
+		}
+
+		public CSVFileDataBuilder setCountrycode(final String countrycode) {
+			csvFileData.setActive(countrycode);
+			return this;
+		}
+
 	}
+
 }

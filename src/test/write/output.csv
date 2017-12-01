@@ -1,101 +1,101 @@
 schoolCode	schoolName	address1	address2	address3	city	postalCode	stateCode	active	countryCode
-0048	Slothgreat	"92677 Kunze Spring"	"92677 Kunze Spring"	"92677 Kunze Spring"	"Derby Center"	17886	IA		
+0048	Slothgreat	"92677 Kunze Spring"			"Derby Center"	17886	IA		
 0146	Vultureroad				"San Martin"	65274	AR		
-0200	Swoopcharm	"824 McKenzie Drives"	"824 McKenzie Drives"	"824 McKenzie Drives"					
-0348	Razorgem	"4914 Farrell Light"	"4914 Farrell Light"	"4914 Farrell Light"	"New Deal"	33671	PA		
-0362	Bunnyflicker	"6255 Evert Unions"	"6255 Evert Unions"	"6255 Evert Unions"	Northleach	38879	IA		
-0363	Spearchestnut	"35763 Murphy Overpass"	"35763 Murphy Overpass"	"35763 Murphy Overpass"					
-0406	Hoofrift	"21484 Fritsch Coves"	"21484 Fritsch Coves"	"21484 Fritsch Coves"	Bury	67133	NJ		
-0466	Elfneon	"9632 Conn Parkway"	"9632 Conn Parkway"	"9632 Conn Parkway"	Bury	67091	MN		
-0619	Cowlgiant	"6784 Runolfsdottir Vista"	"6784 Runolfsdottir Vista"	"6784 Runolfsdottir Vista"	Berkhamsted	80576	OH		
-0630	Bunnybloom	"86174 Lesly Mission"	"86174 Lesly Mission"	"86174 Lesly Mission"	"San Martin"	51968	KY		
-0652	Pirateslime	"96985 MacGyver Shore"	"96985 MacGyver Shore"	"96985 MacGyver Shore"	Baldock	74761	OK		
-0665	Cranecherry	"9655 Earnestine Rapids"	"9655 Earnestine Rapids"	"9655 Earnestine Rapids"					
-0666	Bisonpyrite	"2853 Bethel Vista"	"2853 Bethel Vista"	"2853 Bethel Vista"	Kingsbridge	93251	CO		
-0704	Mastercord	"312 Weimann Crescent"	"312 Weimann Crescent"	"312 Weimann Crescent"					
-0724	Roverheavy	"957 Bill Crossing"	"957 Bill Crossing"	"957 Bill Crossing"	Kingsbridge	86422	WY		
-1010	Keeperquartz	"84464 Mylene Island"	"84464 Mylene Island"	"84464 Mylene Island"	Baldock	01839	NM		
-1020	Toeequinox	"5812 Jodie Junctions"	"5812 Jodie Junctions"	"5812 Jodie Junctions"	Baldock	54897	LA		
-1030	Raptorspectrum	"211 Toy Lodge"	"211 Toy Lodge"	"211 Toy Lodge"	"Cienega Springs"	08999	NH		
-1040	Boneemerald	"5548 Konopelski Greens"	"5548 Konopelski Greens"	"5548 Konopelski Greens"	Lucien	04917	NC		
-1050	Frienddeep	"485 Upton Mews"	"485 Upton Mews"	"485 Upton Mews"	Campden	87088	FL		
-1053	Oriolepuddle	"769 Judson Common"	"769 Judson Common"	"769 Judson Common"	"Skidaway Island"	58335	CO		
-1064	Snapcoal	"2742 Barton Brook"	"2742 Barton Brook"	"2742 Barton Brook"	Plympton	38018	IA		
-1070	Pumaoasis	"4897 O'Conner Summit"	"4897 O'Conner Summit"	"4897 O'Conner Summit"	Berkhamsted	78821	IL		
-1080	Warriorclover	"2922 O'Hara Corner"	"2922 O'Hara Corner"	"2922 O'Hara Corner"	Brandwell	44571	UT		
-1103	Heronivy	"4980 Schmidt Extensions"	"4980 Schmidt Extensions"	"4980 Schmidt Extensions"	Brandwell	13647	WI		
-1120	Foxdent	"13708 Yasmine Springs"	"13708 Yasmine Springs"	"13708 Yasmine Springs"	"Derby Center"	25876	AK		
-1140	Chopperwild	"1628 Dennis Parks"	"1628 Dennis Parks"	"1628 Dennis Parks"	Burrton	04995	NM		
-1162	Hisserbuttercup	"7009 Renee Crest"	"7009 Renee Crest"	"7009 Renee Crest"	Lucien	37400	WA		
-1171	Foxpineapple	"16051 Danika Lodge"	"16051 Danika Lodge"	"16051 Danika Lodge"	Bury	99427	NH		
-1195	Shriekeralder	"818 Camden Oval"	"818 Camden Oval"	"818 Camden Oval"	"Buffalo City"	26763	IA		
-1200	Bugchisel	"91279 Cordie Dale"	"91279 Cordie Dale"	"91279 Cordie Dale"	"Ransom Canyon"	65128	NM		
-1210	Thumbclever	"605 Alba Underpass"	"605 Alba Underpass"	"605 Alba Underpass"	Newstead	66934	NE		
-1215	Browholy	"28841 Marquardt Walk"	"28841 Marquardt Walk"	"28841 Marquardt Walk"	Kingsbridge	47044	PA		
-1230	Stingeriron	"775 Mueller Islands"	"775 Mueller Islands"	"775 Mueller Islands"	Campden	66407	NH		
-1253	Kingplaid	"3024 Grady Glens"	"3024 Grady Glens"	"3024 Grady Glens"	Burrton	93379	NM		
-1256	Goatfierce	"38802 Zulauf Island"	"38802 Zulauf Island"	"38802 Zulauf Island"	Lucien	96878	KY		
-1260	Hissshadow	"6080 Guiseppe Falls"	"6080 Guiseppe Falls"	"6080 Guiseppe Falls"	Berkhamsted	22454	NJ		
-1265	Beerampant	"76596 Durward Ford"	"76596 Durward Ford"	"76596 Durward Ford"	Hoonah	34669	GA		
-1270	Sagecake	"43480 Kris Shoal"	"43480 Kris Shoal"	"43480 Kris Shoal"					
-1271	Gembranch	"401 Hillary Canyon"	"401 Hillary Canyon"	"401 Hillary Canyon"					
-1272	Facelava	"58712 Wintheiser Wells"	"58712 Wintheiser Wells"	"58712 Wintheiser Wells"					
+0200	Swoopcharm	"824 McKenzie Drives"							
+0348	Razorgem	"4914 Farrell Light"			"New Deal"	33671	PA		
+0362	Bunnyflicker	"6255 Evert Unions"			Northleach	38879	IA		
+0363	Spearchestnut	"35763 Murphy Overpass"							
+0406	Hoofrift	"21484 Fritsch Coves"			Bury	67133	NJ		
+0466	Elfneon	"9632 Conn Parkway"			Bury	67091	MN		
+0619	Cowlgiant	"6784 Runolfsdottir Vista"			Berkhamsted	80576	OH		
+0630	Bunnybloom	"86174 Lesly Mission"			"San Martin"	51968	KY		
+0652	Pirateslime	"96985 MacGyver Shore"			Baldock	74761	OK		
+0665	Cranecherry	"9655 Earnestine Rapids"							
+0666	Bisonpyrite	"2853 Bethel Vista"			Kingsbridge	93251	CO		
+0704	Mastercord	"312 Weimann Crescent"							
+0724	Roverheavy	"957 Bill Crossing"			Kingsbridge	86422	WY		
+1010	Keeperquartz	"84464 Mylene Island"			Baldock	01839	NM		
+1020	Toeequinox	"5812 Jodie Junctions"			Baldock	54897	LA		
+1030	Raptorspectrum	"211 Toy Lodge"			"Cienega Springs"	08999	NH		
+1040	Boneemerald	"5548 Konopelski Greens"			Lucien	04917	NC		
+1050	Frienddeep	"485 Upton Mews"			Campden	87088	FL		
+1053	Oriolepuddle	"769 Judson Common"			"Skidaway Island"	58335	CO		
+1064	Snapcoal	"2742 Barton Brook"			Plympton	38018	IA		
+1070	Pumaoasis	"4897 O'Conner Summit"			Berkhamsted	78821	IL		
+1080	Warriorclover	"2922 O'Hara Corner"			Brandwell	44571	UT		
+1103	Heronivy	"4980 Schmidt Extensions"			Brandwell	13647	WI		
+1120	Foxdent	"13708 Yasmine Springs"			"Derby Center"	25876	AK		
+1140	Chopperwild	"1628 Dennis Parks"			Burrton	04995	NM		
+1162	Hisserbuttercup	"7009 Renee Crest"			Lucien	37400	WA		
+1171	Foxpineapple	"16051 Danika Lodge"			Bury	99427	NH		
+1195	Shriekeralder	"818 Camden Oval"			"Buffalo City"	26763	IA		
+1200	Bugchisel	"91279 Cordie Dale"			"Ransom Canyon"	65128	NM		
+1210	Thumbclever	"605 Alba Underpass"			Newstead	66934	NE		
+1215	Browholy	"28841 Marquardt Walk"			Kingsbridge	47044	PA		
+1230	Stingeriron	"775 Mueller Islands"			Campden	66407	NH		
+1253	Kingplaid	"3024 Grady Glens"			Burrton	93379	NM		
+1256	Goatfierce	"38802 Zulauf Island"			Lucien	96878	KY		
+1260	Hissshadow	"6080 Guiseppe Falls"			Berkhamsted	22454	NJ		
+1265	Beerampant	"76596 Durward Ford"			Hoonah	34669	GA		
+1270	Sagecake	"43480 Kris Shoal"							
+1271	Gembranch	"401 Hillary Canyon"							
+1272	Facelava	"58712 Wintheiser Wells"							
 1275	Princemaple								
-1285	Sparrowcandy	"3149 Pacocha Lodge"	"3149 Pacocha Lodge"	"3149 Pacocha Lodge"	Burrton	92628	GA		
-1291	Rippertreasure	"35184 West Lakes"	"35184 West Lakes"	"35184 West Lakes"	Hoonah	45824	AK		
-1292	Binderrhinestone	"2203 Ebert View"	"2203 Ebert View"	"2203 Ebert View"	"San Martin"	27296	IL		
-1293	Knifemarsh	"796 Alysson Fields"	"796 Alysson Fields"	"796 Alysson Fields"	Brandwell	50598	ND		
-1294	Dutchesslemon	"75174 Reilly Row"	"75174 Reilly Row"	"75174 Reilly Row"	"Skidaway Island"	79475	WY		
+1285	Sparrowcandy	"3149 Pacocha Lodge"			Burrton	92628	GA		
+1291	Rippertreasure	"35184 West Lakes"			Hoonah	45824	AK		
+1292	Binderrhinestone	"2203 Ebert View"			"San Martin"	27296	IL		
+1293	Knifemarsh	"796 Alysson Fields"			Brandwell	50598	ND		
+1294	Dutchesslemon	"75174 Reilly Row"			"Skidaway Island"	79475	WY		
 1305	Singersun								
-1311	Pumahoneysuckle	"606 Dallin Mountain"	"606 Dallin Mountain"	"606 Dallin Mountain"	Lucien	91621	CT		
-1315	Sharkslime	"528 Dax Mountain"	"528 Dax Mountain"	"528 Dax Mountain"	Kingsbridge	90504	MO		
-1320	Sentrylightning	"27472 Eichmann Ford"	"27472 Eichmann Ford"	"27472 Eichmann Ford"	"San Martin"	40758	MO		
-1325	Slayergarnet	"39794 Ramiro Keys"	"39794 Ramiro Keys"	"39794 Ramiro Keys"	"New Deal"	15059	TN		
-1330	Chillercold	"27294 Karine Dam"	"27294 Karine Dam"	"27294 Karine Dam"	"Ransom Canyon"	98564	NM		
+1311	Pumahoneysuckle	"606 Dallin Mountain"			Lucien	91621	CT		
+1315	Sharkslime	"528 Dax Mountain"			Kingsbridge	90504	MO		
+1320	Sentrylightning	"27472 Eichmann Ford"			"San Martin"	40758	MO		
+1325	Slayergarnet	"39794 Ramiro Keys"			"New Deal"	15059	TN		
+1330	Chillercold	"27294 Karine Dam"			"Ransom Canyon"	98564	NM		
 1335	Tradershy								
-1336	Mistressaquamarine	"597 Arlene Loop"	"597 Arlene Loop"	"597 Arlene Loop"	"San Martin"	27741	CO		
-1337	Hairpetal	"61540 Josue Parks"	"61540 Josue Parks"	"61540 Josue Parks"	Hoonah	26909	MA		
-1340	Lizardpear	"965 Simeon Plaza"	"965 Simeon Plaza"	"965 Simeon Plaza"	Plympton	52649	KS		
-1345	Gamblersilent	"251 Adriel Tunnel"	"251 Adriel Tunnel"	"251 Adriel Tunnel"	"Derby Center"	69374	WV		
+1336	Mistressaquamarine	"597 Arlene Loop"			"San Martin"	27741	CO		
+1337	Hairpetal	"61540 Josue Parks"			Hoonah	26909	MA		
+1340	Lizardpear	"965 Simeon Plaza"			Plympton	52649	KS		
+1345	Gamblersilent	"251 Adriel Tunnel"			"Derby Center"	69374	WV		
 1350	Wingwarp								
-1360	Binderash	"28454 Billie Flats"	"28454 Billie Flats"	"28454 Billie Flats"	Plympton	04566	IN		
-1365	Forgervaliant	"5456 Auer Fields"	"5456 Auer Fields"	"5456 Auer Fields"	"Skidaway Island"	87156	IA		
-1370	Mastermint	"3309 Gutkowski Garden"	"3309 Gutkowski Garden"	"3309 Gutkowski Garden"	Campden	06683	TX		
-1410	Yakmaple	"41947 Weimann Rapid"	"41947 Weimann Rapid"	"41947 Weimann Rapid"	Kingsbridge	52994	AZ		
-1420	Razorcute	"6951 McGlynn Point"	"6951 McGlynn Point"	"6951 McGlynn Point"	Burrton	44344	IN		
-1430	Foxvine	"10744 Ryley Tunnel"	"10744 Ryley Tunnel"	"10744 Ryley Tunnel"	"New Deal"	40813	AK		
-1440	Throatthread	"22128 Watsica Groves"	"22128 Watsica Groves"	"22128 Watsica Groves"	Kingsbridge	63012	MA		
-1441	Cowlslow	"92491 Sauer Lakes"	"92491 Sauer Lakes"	"92491 Sauer Lakes"	"Ransom Canyon"	44057	MI		
-1450	Mindnebula	"70937 Robel Fords"	"70937 Robel Fords"	"70937 Robel Fords"	Lucien	06795	WV		
-1460	Thiefround	"33374 Leuschke Wells"	"33374 Leuschke Wells"	"33374 Leuschke Wells"	"Ransom Canyon"	82765	PA		
-1470	Frillspiral	"61450 Gutmann Plains"	"61450 Gutmann Plains"	"61450 Gutmann Plains"	Hoonah	42056	VA		
+1360	Binderash	"28454 Billie Flats"			Plympton	04566	IN		
+1365	Forgervaliant	"5456 Auer Fields"			"Skidaway Island"	87156	IA		
+1370	Mastermint	"3309 Gutkowski Garden"			Campden	06683	TX		
+1410	Yakmaple	"41947 Weimann Rapid"			Kingsbridge	52994	AZ		
+1420	Razorcute	"6951 McGlynn Point"			Burrton	44344	IN		
+1430	Foxvine	"10744 Ryley Tunnel"			"New Deal"	40813	AK		
+1440	Throatthread	"22128 Watsica Groves"			Kingsbridge	63012	MA		
+1441	Cowlslow	"92491 Sauer Lakes"			"Ransom Canyon"	44057	MI		
+1450	Mindnebula	"70937 Robel Fords"			Lucien	06795	WV		
+1460	Thiefround	"33374 Leuschke Wells"			"Ransom Canyon"	82765	PA		
+1470	Frillspiral	"61450 Gutmann Plains"			Hoonah	42056	VA		
 1501	Lasherwalnut								
 1502	Mareflower								
 1503	Antlerquasar								
 1504	Serpentmaple								
-1990	Gamblersavage	"227 Edd Street"	"227 Edd Street"	"227 Edd Street"	Baldock	36830	MN		
-1991	Cattitanium	"371 Ari Wall"	"371 Ari Wall"	"371 Ari Wall"	Hoonah	22884	OH		
-2010	Jaguarnebula	"5415 Okuneva Fall"	"5415 Okuneva Fall"	"5415 Okuneva Fall"	"Ransom Canyon"	93017	NY		
-2040	Kinggem	"17424 Miller Courts"	"17424 Miller Courts"	"17424 Miller Courts"	Berkhamsted	50972	KY		
-2140	Wolfyellow	"339 Pouros Path"	"339 Pouros Path"	"339 Pouros Path"	"Skidaway Island"	53748	FL		
-2190	Terriermoor	"496 Bernier Street"	"496 Bernier Street"	"496 Bernier Street"	"Derby Center"	97345	MO		
-2360	Masterlead	"659 Maximo Spur"	"659 Maximo Spur"	"659 Maximo Spur"	Burrton	07753	SD		
-2440	Lightningclever	"5556 Collier Crossing"	"5556 Collier Crossing"	"5556 Collier Crossing"	Lucien	47759	MD		
-2450	Stalkercyber	"4140 Rosalee Lock"	"4140 Rosalee Lock"	"4140 Rosalee Lock"	Bury	56436	CA		
-2950	Princefoul	"7707 Buckridge Street"	"7707 Buckridge Street"	"7707 Buckridge Street"	Berkhamsted	31869	MS		
-4022	Keepervoid	"6764 Steuber Mall"	"6764 Steuber Mall"	"6764 Steuber Mall"	Hoonah	06589	HI		
-4030	Trackerspice	"5987 Pollich Causeway"	"5987 Pollich Causeway"	"5987 Pollich Causeway"	Berkhamsted	14822	ND		
-4031	Necknoble	"82425 Alisa Inlet"	"82425 Alisa Inlet"	"82425 Alisa Inlet"	Campden	43939	MA		
-4033	Lizardjet	"59310 Emmy Trail"	"59310 Emmy Trail"	"59310 Emmy Trail"	Lucien	21136	DE		
-4052	Griffinfantasy	"51647 Kulas Mount"	"51647 Kulas Mount"	"51647 Kulas Mount"	Burrton	38072	IA		
-4053	Mindfierce	"383 Maybell Spurs"	"383 Maybell Spurs"	"383 Maybell Spurs"	Newstead	19099	ND		
-4055	Masterdog	"45658 Johnston Lake"	"45658 Johnston Lake"	"45658 Johnston Lake"	Campden	91919	MA		
-4061	Lightningtabby	"726 Robel Neck"	"726 Robel Neck"	"726 Robel Neck"	Kingsbridge	14782	KY		
-4062	Elkpickle	"140 Schuster Crescent"	"140 Schuster Crescent"	"140 Schuster Crescent"	Hoonah	07073	HI		
-4070	Crowseed	"93649 Swift Forges"	"93649 Swift Forges"	"93649 Swift Forges"	Berkhamsted	62287	CO		
-4080	Mustangdew	"9510 Shanahan Ways"	"9510 Shanahan Ways"	"9510 Shanahan Ways"	"Derby Center"	47610	CT		
-4081	Kickerwater	"741 Wuckert Mission"	"741 Wuckert Mission"	"741 Wuckert Mission"	"Cienega Springs"	28606	NM		
-4082	Stormcaramel	"98116 VonRueden Lodge"	"98116 VonRueden Lodge"	"98116 VonRueden Lodge"	"New Deal"	52989	ND		
-4084	Gamblerhelix	"9896 Stark Tunnel"	"9896 Stark Tunnel"	"9896 Stark Tunnel"	Newstead	28145	CA		
-4100	Samuraigarnet	"2615 Hauck Squares"	"2615 Hauck Squares"	"2615 Hauck Squares"	Northleach	42638	PA		
-4113	Forgerfancy	"634 Carroll Corner"	"634 Carroll Corner"	"634 Carroll Corner"	Burrton	51089	IL		
+1990	Gamblersavage	"227 Edd Street"			Baldock	36830	MN		
+1991	Cattitanium	"371 Ari Wall"			Hoonah	22884	OH		
+2010	Jaguarnebula	"5415 Okuneva Fall"			"Ransom Canyon"	93017	NY		
+2040	Kinggem	"17424 Miller Courts"			Berkhamsted	50972	KY		
+2140	Wolfyellow	"339 Pouros Path"			"Skidaway Island"	53748	FL		
+2190	Terriermoor	"496 Bernier Street"			"Derby Center"	97345	MO		
+2360	Masterlead	"659 Maximo Spur"			Burrton	07753	SD		
+2440	Lightningclever	"5556 Collier Crossing"			Lucien	47759	MD		
+2450	Stalkercyber	"4140 Rosalee Lock"			Bury	56436	CA		
+2950	Princefoul	"7707 Buckridge Street"			Berkhamsted	31869	MS		
+4022	Keepervoid	"6764 Steuber Mall"			Hoonah	06589	HI		
+4030	Trackerspice	"5987 Pollich Causeway"			Berkhamsted	14822	ND		
+4031	Necknoble	"82425 Alisa Inlet"			Campden	43939	MA		
+4033	Lizardjet	"59310 Emmy Trail"			Lucien	21136	DE		
+4052	Griffinfantasy	"51647 Kulas Mount"			Burrton	38072	IA		
+4053	Mindfierce	"383 Maybell Spurs"			Newstead	19099	ND		
+4055	Masterdog	"45658 Johnston Lake"			Campden	91919	MA		
+4061	Lightningtabby	"726 Robel Neck"			Kingsbridge	14782	KY		
+4062	Elkpickle	"140 Schuster Crescent"			Hoonah	07073	HI		
+4070	Crowseed	"93649 Swift Forges"			Berkhamsted	62287	CO		
+4080	Mustangdew	"9510 Shanahan Ways"			"Derby Center"	47610	CT		
+4081	Kickerwater	"741 Wuckert Mission"			"Cienega Springs"	28606	NM		
+4082	Stormcaramel	"98116 VonRueden Lodge"			"New Deal"	52989	ND		
+4084	Gamblerhelix	"9896 Stark Tunnel"			Newstead	28145	CA		
+4100	Samuraigarnet	"2615 Hauck Squares"			Northleach	42638	PA		
+4113	Forgerfancy	"634 Carroll Corner"			Burrton	51089	IL		
